@@ -8,7 +8,8 @@
     <title>a.m fight clube</title>
 </head>
 <body class="
-  h-screen font-bevietnan text-gray-400 alinhame
+  h-screen font-bevietnan text-gray-400 alinhamento
+  bg-slate-950
 ">
   <header class="
     bg-slate-950 flex justify-between items-center 
@@ -46,14 +47,14 @@
     </div>
   </header>
 
-  <main class="h-full w-full">
+  <main class="w-full flex flex-col gap-10 items-center">
     <section class="
-      h-96 w-full img-introd flex flex-col justify-center
+      h-90 w-full img-introd flex flex-col justify-center
     ">
       <h1 class="
-        text-red-600 font-extrabold text-2xl  ml-4
+        text-yellow-500 text-2xl  ml-4
       ">
-        BEM-VINDO A<br> A.M FIGHT CLUBE, ESCOLA DE ARTES MARCIAIS.
+        BEM-VINDO A.M FIGHT CLUBE, ESCOLA DE ARTES MARCIAIS.
       </h1>
       <p class="text-gray-100 font-semibold w-[80%] my-3 ml-4 lg:w-100">
         Aproveite os recursos mais fáceis para identificar um valor 
@@ -65,17 +66,17 @@
       </button>
     </section>
 
-    <section class="intro-artes alinhame">
+    <section class="intro-artes">
       <div>
-        <img src="./src/img/vecteezy_jiu-jitsu-red.jpg" alt="img-jiu-jitsu">
+        <img src="./src/img/vecteezy_jiu-jitsu-red.png" alt="img-jiu-jitsu">
         <strong>Jiu-Jitsu</strong>
         <p>
           A arte suave que domina a força
         </p>
       </div>
 
-      <div>
-        <img src="./src/img/vecteezy_muaythai-red.jpg" alt="img-jiu-jitsu">
+      <div class="my-5">
+        <img src="./src/img/vecteezy_muaythai-red.png" alt="img-jiu-jitsu">
         <strong>Muay thai</strong>
         <p>
           Oito pontos de impacto
@@ -83,12 +84,67 @@
       </div>
 
       <div>
-        <img src="./src/img/vecteezy_boxer-red.jpg" alt="img-jiu-jitsu">
+        <img src="./src/img/vecteezy_boxer-red.png" alt="img-jiu-jitsu">
         <strong>Boxe</strong>
         <p>
           Disciplina, precisão e potência
         </p>
       </div>
+    </section>
+
+    <section class="about alinhamento">
+      <div class="img-about"></div>
+      <h2 class="subtitulo-about">Sobre-nós</h2>
+      <p class="
+        text-lg
+      ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
+        reiciendis nostrum doloremque minima mollitia odit praesentium eos 
+        facere esse sapiente sunt recusandae sit! Quam, earum necessitatibus 
+        minima nostrum fugit numquam?
+      </p>
+      
+      <section class="alinhamento"> <!--galeria-->
+        <h2 class="subtitulo-about">Alunos</h2>
+        <div class="galaria-alunos">
+          <img src="./src/img/galeria/img-sessao-apresentacao.jpg" alt="imagem-alunos">
+          <img src="./src/img/galeria/IMG-20250903-WA0056.jpg" alt="imagem-alunos">
+          <img src="./src/img/galeria/IMG-20250903-WA0057.jpg" alt="imagem-alunos">
+        </div>
+  
+        <div class="container-dots flex">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+     
+     
+
+      <section class="h-110 w-full relative alinhamento my-5"> 
+        <h2 class="self-center subtitulo-about">Mestre</h2>
+
+        <div class="bg-white w-[70%] h-80 shadow-xl/20">
+          <div class="img-about-mestre"></div>
+        </div>
+
+        <a href="#">
+          <img src="./src/img/icon-instagram.svg" alt="" class="
+            size-7 absolute top-[26.3em] left-[178px] 
+          ">
+        </a>
+      </section>
+
+      <section class="alinhamento my-8">
+        <button class="
+       bg-red-600 text-white h-12 w-42 shadow-xl
+       lg:hover:bg-yellow-400  rounded-sm ml-5
+        "> 
+        Inscreva-se agora
+       </button>
+
+        <p class="text-center mt-2 text-blue-950  ml-5">Aula experimental</p>
+        <p class="text-center font-bold text-green-500  ml-5">Gratís</p>
     </section>
   </main>
 </body>

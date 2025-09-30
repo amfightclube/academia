@@ -11,7 +11,7 @@
     all: unset;
   }
 
-  .alinhame {
+  .alinhamento {
     @apply flex flex-col items-center;
   }
 
@@ -40,18 +40,19 @@
     @apply
      bg-white h-12 w-42 text-base rounded-sm  ml-4
      font-bold lg:hover:bg-yellow-400 lg:hover:text-white
+     shadow-2xl text-blue-950
      ;
   }
 
   /*icones artes marciais*/
-  .intro-artes{
-    @apply h-60 my-20 w-[90%];
+  .intro-artes {
+    @apply h-60  w-[90%] my-10;
   }
 
   .intro-artes div {
     @apply 
       grid grid-cols-[auto_1fr] grid-rows-2 place-items-center
-      my-5 gap-x-3
+      gap-x-3
     ;
   }
   .intro-artes img {
@@ -67,6 +68,55 @@
   .intro-artes p {
     @apply 
      font-medium text-lg col-start-2 row-start-2 text-gray-500
-    ;
+    ; 
   } 
+  /*sobre nos*/
+  .about {
+    @apply bg-gray-200 w-full px-5 py-10;
+  }
+
+  .subtitulo-about {
+    @apply self-start text-xl mt-5 mb-3 font-bold text-red-600;
+  }
+
+  .img-about {
+    @apply 
+     h-35 w-full rounded-sm
+     bg-[url(../img/img-jiu-jitsu-destaque.jpg)]
+     bg-cover
+    ;
+  }
+
+  .img-about-mestre {
+    @apply 
+     h-80 w-[70%] bg-[url(../img/IMG-mestre-fundo-cinza.jpg)]
+     bg-cover absolute top-[85px] left-[75px] shadow-xl/20
+    ;
+  }
+
+  .galaria-alunos {
+    @apply 
+    w-full h-55 my-5 overflow-x-auto flex gap-4 shadow-2xl;
+  }
+  
+  .galaria-alunos img {
+    @apply w-full h-full shrink-0 object-cover;
+  }
+
+  .dot {
+    @apply 
+      size-3  rounded-full border-1 border-red-500 
+      cursor-pointer transition-colors mx-1 block
+    ;
+   }    
+
+  .dot.active {
+    @apply bg-blue-800;
+  }
+
+  .aula-free-an {
+    @apply h-20 bg-yellow-500 text-white;
+  }
+
+ 
 }
