@@ -1,14 +1,16 @@
-.intro-artes img {
-    @apply size-15;
-  }@import "tailwindcss";
+@import "tailwindcss";
 
 @theme {
   --font-bevietnan: "Work Sans", sans-serif;
+  --color-black: rgb(0, 0, 0);
 }
 
 @layer components {
   .reset-all {
     all: unset;
+  }
+  .intro-artes img {
+    @apply size-15;
   }
 
   .alinhamento {
