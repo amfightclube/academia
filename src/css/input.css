@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-bevietnan: "Work Sans", sans-serif;
+}
+
+@layer components {
+  .reset-all {
+    all: unset;
+  }
+
+  .menu {
+    @apply 
+     absolute top-[80px] bg-slate-950 w-[80vw] h-68 shadow-xl 
+     left-1/2 -translate-x-1/2 flex flex-col justify-center 
+     items-center font-bold text-white opacity-0 invisible
+
+     lg:visible md:opacity-100 lg:w-110 lg:h-6 lg:shadow-none 
+     lg:translate-x-0 lg:static sm:w-90  sm:h-60
+    ;
+  }
+
+  .menu li {
+    @apply hover:text-red-600;
+  }
+}

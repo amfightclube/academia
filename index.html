@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script type="module" src="./src/js/main.js" defer></script>
     <title>a.m fight clube</title>
 </head>
-<body>
-    
+<body class="
+  w-full font-bevietnan text-gray-400 flex 
+  flex-col items-center
+">
+  <header class="
+    bg-slate-950 flex justify-between items-center 
+    h-[60px] w-full relative border-b-1 border-gray-300
+    text-white
+  ">
+    <img src="./src/img/marca.png" alt="" class="
+      h-[90%] object-containn ml-4 mr-11 
+    "> <!--Usar margin pra compensar a falta de tamanho em relacao ao 
+    contato-->
+    <nav class="menu">
+      <ul class="
+        lg:flex lg:gap-7 lg:h-full 
+      ">
+        <li>Home</li>
+        <li>navegar</li>
+        <li>planos</li>
+        <li>contato</li>
+      </ul>
+    </nav>
+
+    <button id="bnt-menu" class="
+      h-5 mr-5 reset-all lg:hidden
+    " >
+      <img src="./src/img/icon-hamburger.svg" alt="botao-menu" class="
+        bnt-amburg-img
+      ">
+    </button>
+
+    <div class="hidden mr-4 lg:flex lg:items-center">
+      <img src="" alt=""> <!--img do telefone-->  
+      <p>Contate-nos<br>
+        <span class="font-bold">82 994 959495</span>
+      </p>
+    </div>
+  </header>
 </body>
 </html>
