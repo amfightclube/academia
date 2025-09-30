@@ -1,0 +1,16 @@
+{
+  "name": "academia-v1",
+  "version": "1.0.0",
+  "description": "site de artes marcias (usado pra apresentar aos clientes)",
+  "license": "ISC",
+  "author": "jose33-afk",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}
