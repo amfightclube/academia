@@ -52,7 +52,7 @@
 
   .intro-artes div {
     @apply 
-      grid grid-cols-[auto_1fr] grid-rows-2 place-items-center
+      grid grid-cols-[auto_1fr] grid-rows-2 
       gap-x-3
     ;
   }
@@ -118,6 +118,65 @@
   .aula-free-an {
     @apply h-20 bg-yellow-500 text-white;
   }
+  /*planos*/
+  .planos {
+    @apply 
+      w-full
+    ;
+  }
 
- 
+  .planos div {
+    @apply 
+     w-[95%] border-1 border-red-400 rounded-b-xl my-5 p-2
+     justify-center shadow-md bg-white
+    ;
+  }
+
+  .planos img {
+    @apply 
+     size-15 
+    ;
+  }
+
+   .planos strong {
+    @apply 
+     font-bold text-yellow-500 text-xl
+    ;
+  }
+
+  .ciflao {
+    @apply  text-gray-600 text-3xl;
+  }
+
+  .valor {
+    @apply text-gray-950 text-3xl;
+  }
+
+  .bnt-comecar {
+    @apply 
+      bg-blue-500 text-white p-3 w-[80%] mt-3 rounded-2xl
+      text-lg shadow-md
+    ;
+
+  }
+  .mais-pop {
+    @apply 
+    bg-amber-400 absolute text-black p-1 px-4 rounded-3xl
+    top-[-15px]
+    ;
+  }
+
+  .linha {
+    @apply 
+     h-px w-[90%] block bg-red-400 my-2
+    ;
+  }
+
+  .planos ul {
+    @apply self-start ml-10;
+  }
+
+  .planos ul > img{
+    @apply size-2;
+  }
 }
