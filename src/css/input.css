@@ -1,4 +1,6 @@
-@import "tailwindcss";
+.intro-artes img {
+    @apply size-15;
+  }@import "tailwindcss";
 
 @theme {
   --font-bevietnan: "Work Sans", sans-serif;
@@ -7,6 +9,16 @@
 @layer components {
   .reset-all {
     all: unset;
+  }
+
+  .alinhame {
+    @apply flex flex-col items-center;
+  }
+
+  .img-introd {
+    @apply 
+      bg-[url(../img/boxer-destaque.jpg)] 
+      bg-cover bg-center;
   }
 
   .menu {
@@ -23,4 +35,38 @@
   .menu li {
     @apply hover:text-red-600;
   }
+
+  .bnt-inscreva {
+    @apply
+     bg-white h-12 w-42 text-base rounded-sm  ml-4
+     font-bold lg:hover:bg-yellow-400 lg:hover:text-white
+     ;
+  }
+
+  /*icones artes marciais*/
+  .intro-artes{
+    @apply h-60 my-20 w-[90%];
+  }
+
+  .intro-artes div {
+    @apply 
+      grid grid-cols-[auto_1fr] grid-rows-2 place-items-center
+      my-5 gap-x-3
+    ;
+  }
+  .intro-artes img {
+    @apply size-15 col-end-2 row-span-full object-contain;
+  }
+
+  .intro-artes strong {
+    @apply 
+     font-bold text-yellow-400 text-xl col-start-2
+    ;
+  } 
+
+  .intro-artes p {
+    @apply 
+     font-medium text-lg col-start-2 row-start-2 text-gray-500
+    ;
+  } 
 }
