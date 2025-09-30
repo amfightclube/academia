@@ -2,7 +2,6 @@
 
 @theme {
   --font-bevietnan: "Work Sans", sans-serif;
-  --color-black: rgb(0, 0, 0);
 }
 
 @layer components {
