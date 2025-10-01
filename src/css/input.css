@@ -157,12 +157,11 @@
       bg-blue-500 text-white p-3 w-[80%] mt-3 rounded-2xl
       text-lg shadow-lg shadow-blue-500/50
     ;
-
   }
   .mais-pop {
     @apply 
     bg-amber-400 absolute text-black p-1 px-4 rounded-3xl
-    top-[-15px]
+    top-[-15px] shadow-xl shadow-amber-300/20
     ;
   }
 
