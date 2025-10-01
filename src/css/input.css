@@ -128,7 +128,7 @@
   .planos div {
     @apply 
      w-[95%] rounded-xl my-5 p-5
-     justify-center shadow-md bg-white
+     justify-center shadow-md bg-white border-1 border-red-300
     ;
   }
 
