@@ -208,14 +208,8 @@
   .visible {
     visibility: visible;
   }
-  .absolute {
-    position: absolute;
-  }
   .relative {
     position: relative;
-  }
-  .top-\[26\.3em\] {
-    top: 26.3em;
   }
   .container {
     width: 100%;
@@ -247,6 +241,12 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mr-1 {
+    margin-right: calc(var(--spacing) * 1);
+  }
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
   }
@@ -256,11 +256,29 @@
   .mr-11 {
     margin-right: calc(var(--spacing) * 11);
   }
+  .mr-\[2px\] {
+    margin-right: 2px;
+  }
+  .mr-\[3px\] {
+    margin-right: 3px;
+  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
+  }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
+  }
+  .ml-\[2px\] {
+    margin-left: 2px;
+  }
+  .ml-px {
+    margin-left: 1px;
   }
   .flex {
     display: flex;
@@ -286,9 +304,6 @@
   }
   .h-100 {
     height: calc(var(--spacing) * 100);
-  }
-  .h-110 {
-    height: calc(var(--spacing) * 110);
   }
   .h-\[60px\] {
     height: 60px;
@@ -420,6 +435,9 @@
   }
   .text-green-500 {
     color: var(--color-green-500);
+  }
+  .text-red-500 {
+    color: var(--color-red-500);
   }
   .text-white {
     color: var(--color-white);
@@ -682,10 +700,10 @@
   }
   .img-about-mestre {
     position: absolute;
-    top: 85px;
-    left: 75px;
+    top: 20px;
+    left: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 80);
-    width: 70%;
+    width: 100%;
     background-image: url(../img/IMG-mestre-fundo-cinza.jpg);
     background-size: cover;
     --tw-shadow-alpha: 20%;
@@ -701,6 +719,7 @@
     overflow-x: auto;
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    scrollbar-width: none;
   }
   .galaria-alunos img {
     height: 100%;

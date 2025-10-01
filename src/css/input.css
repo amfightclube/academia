@@ -1,4 +1,4 @@
-@import "tailwindcss";
+onta@import "tailwindcss";
 
 @theme {
   --font-bevietnan: "Work Sans", sans-serif;
@@ -90,14 +90,15 @@
 
   .img-about-mestre {
     @apply 
-     h-80 w-[70%] bg-[url(../img/IMG-mestre-fundo-cinza.jpg)]
-     bg-cover absolute top-[85px] left-[75px] shadow-xl/20
+     h-80 w-full bg-[url(../img/IMG-mestre-fundo-cinza.jpg)]
+     bg-cover absolute top-[20px] left-5 shadow-xl/20
     ;
   }
 
   .galaria-alunos {
     @apply 
     w-full h-55 my-5 overflow-x-auto flex gap-4 shadow-2xl;
+    scrollbar-width: none;
   }
   
   .galaria-alunos img {
@@ -107,7 +108,7 @@
   .dot {
     @apply 
       size-3  rounded-full border-1 border-red-500 
-      cursor-pointer transition-colors mx-1 block
+      cursor-pointer transition-colors block
     ;
    }    
 
