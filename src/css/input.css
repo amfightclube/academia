@@ -41,7 +41,7 @@
     @apply
      bg-white h-12 w-42 text-base rounded-sm  ml-4
      font-bold lg:hover:bg-yellow-400 lg:hover:text-white
-     shadow-2xl text-blue-950
+     shadow-sm text-blue-950 shadow-white
      ;
   }
 
@@ -127,7 +127,7 @@
 
   .planos div {
     @apply 
-     w-[95%] border-1 border-red-400 rounded-b-xl my-5 p-2
+     w-[95%] rounded-xl my-5 p-5
      justify-center shadow-md bg-white
     ;
   }
@@ -140,7 +140,7 @@
 
    .planos strong {
     @apply 
-     font-bold text-yellow-500 text-xl
+     font-bold  text-yellow-500 text-xl
     ;
   }
 
@@ -155,7 +155,7 @@
   .bnt-comecar {
     @apply 
       bg-blue-500 text-white p-3 w-[80%] mt-3 rounded-2xl
-      text-lg shadow-md
+      text-lg shadow-lg shadow-blue-500/50
     ;
 
   }
@@ -168,7 +168,7 @@
 
   .linha {
     @apply 
-     h-px w-[90%] block bg-red-400 my-2
+     h-px w-[80%] block bg-gray-400 my-2
     ;
   }
 
@@ -176,7 +176,11 @@
     @apply self-start ml-10;
   }
 
-  .planos ul > img{
-    @apply size-2;
+  .icon-corr {
+    @apply flex gap-1;
   }
+
+  .icon-corr img {
+    @apply size-5;
+  } 
 }
