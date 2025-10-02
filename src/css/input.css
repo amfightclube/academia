@@ -88,7 +88,7 @@
   } 
   /*sobre nos*/
   .about {
-    @apply bg-gray-200 w-full px-5 py-10;
+    @apply bg-gray-200 w-full px-5 pt-10;
   }
 
   .subtitulo-about {
@@ -223,4 +223,19 @@
   }
 
   /*footer*/
+  .footer-subtitulo {
+    @apply  text-white font-bold pl-1 my-3;
+  }
+  .footer-list {
+    @apply pl-1;
+  }
+
+  .list-social li {
+    @apply size-8 bg-gray-500 rounded-md flex justify-center items-center;
+  }
+
+  .list-social img {
+    @apply size-full;
+  }
+
 }
