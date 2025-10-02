@@ -183,4 +183,28 @@
   .icon-corr img {
     @apply size-5;
   } 
+  /*Contato*/
+  .contato {
+    @apply 
+      grid grid-cols-[auto_1fr] grid-rows-2 text-sm gap-x-2
+      my-3;
+  }
+  .contato div {
+    @apply 
+      size-10 border-1 border-red-500 rounded-md
+      col-end-2 row-span-full
+    ;
+  }
+
+  .contato img {
+    @apply size-[60%];
+  }
+
+  .contato strong {
+    @apply text-white col-start-2 row-end-2 ;
+  }
+
+  .contato p {
+    @apply col-start-2;
+  }
 }
