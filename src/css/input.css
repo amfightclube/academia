@@ -90,7 +90,7 @@
 
   .bg-mestre {
     @apply 
-     h-85 w-70 bg-[url(../img/professor.png)]
+     h-85 w-70 bg-[url(../img/IMG-mestre-fundo-cinza.png)]
      bg-contain bg-no-repeat 
     ;
   }
