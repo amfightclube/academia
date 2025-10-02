@@ -22,7 +22,8 @@
 
   .bnt-zap {
     @apply 
-      flex justify-center items-center gap-2 h-10 w-[70%] self-center bg-green-500 text-white rounded-full
+      flex justify-center items-center gap-2 h-10 w-[70%] 
+      self-center bg-green-500 text-white rounded-full
       text-base my-4 shadow-lg shadow-green-500/30 font-bold 
     ;
   }
@@ -49,8 +50,23 @@
   }
 
   .menu li {
-    @apply hover:text-red-600;
+    @apply 
+     mt-[10px] mr-auto mb-[15px] ml-[40px]
+     md:m-0
+     ;
   }
+
+  .menu button {
+    @apply 
+     active:text-orange-400 active:text-xl
+     lg:hover:text-orange-400 hover:text-xl;
+  }
+
+  .menu span {
+    @apply h-px w-[85%] bg-gray-700 block m-auto md:hidden;
+  }
+  /*margin: 10px auto 25px auto;*/
+
 
   .bnt-inscreva {
     @apply
@@ -136,9 +152,7 @@
   }
   /*planos*/
   .planos {
-    @apply 
-      w-full
-    ;
+    @apply w-full;
   }
 
   .card {
@@ -149,15 +163,11 @@
   }
 
   .planos img {
-    @apply 
-     size-15 
-    ;
+    @apply size-15;
   }
 
    .planos strong {
-    @apply 
-     font-bold text-yellow-500 text-xl
-    ;
+    @apply font-bold text-yellow-500 text-xl;
   }
 
   .ciflao {
@@ -182,8 +192,7 @@
   }
 
   .linha {
-    @apply 
-     h-px w-[80%] block bg-gray-400 my-2;
+    @apply h-px w-[80%] block bg-gray-400 my-2;
   }
 
   .planos ul {
@@ -200,8 +209,7 @@
   /*Contato*/
   .contato {
     @apply 
-      grid grid-cols-[auto_1fr] grid-rows-2 text-sm gap-x-2
-      my-3;
+      grid grid-cols-[auto_1fr] grid-rows-2 text-sm gap-x-2 my-3;
   }
   .contato div {
     @apply 
@@ -231,7 +239,9 @@
   }
 
   .list-social li {
-    @apply size-8 bg-gray-500 rounded-md flex justify-center items-center;
+    @apply 
+     size-8 bg-gray-500 rounded-md flex justify-center 
+     items-center;
   }
 
   .list-social img {
