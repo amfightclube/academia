@@ -1,4 +1,4 @@
-onta@import "tailwindcss";
+@import "tailwindcss";
 
 @theme {
   --font-bevietnan: "Work Sans", sans-serif;
@@ -88,10 +88,10 @@ onta@import "tailwindcss";
     ;
   }
 
-  .img-about-mestre {
+  .bg-mestre {
     @apply 
-     h-80 w-full bg-[url(../img/IMG-mestre-fundo-cinza.jpg)]
-     bg-cover absolute top-[20px] left-5 shadow-xl/20
+     h-85 w-70 bg-[url(../img/professor.png)]
+     bg-contain bg-no-repeat 
     ;
   }
 
@@ -108,7 +108,7 @@ onta@import "tailwindcss";
   .dot {
     @apply 
       size-3  rounded-full border-1 border-red-500 
-      cursor-pointer transition-colors block
+      cursor-pointer transition-colors block m-1
     ;
    }    
 
