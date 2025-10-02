@@ -8,8 +8,23 @@
   .reset-all {
     all: unset;
   }
+
   .intro-artes img {
     @apply size-15;
+  }
+   
+  .bnt-larg-agendar {
+    @apply  
+    bg-white text-red-500 w-50 h-10 rounded-full font-bold
+      text-base my-4 shadow-lg shadow-white/30
+    ;
+  }
+
+  .bnt-zap {
+    @apply 
+      flex justify-center items-center gap-2 h-10 w-[70%] self-center bg-green-500 text-white rounded-full
+      text-base my-4 shadow-lg shadow-green-500/30 font-bold 
+    ;
   }
 
   .alinhamento {
@@ -126,7 +141,7 @@
     ;
   }
 
-  .planos div {
+  .card {
     @apply 
      w-[95%] rounded-xl my-5 p-5
      justify-center shadow-md bg-white border-1
@@ -141,7 +156,7 @@
 
    .planos strong {
     @apply 
-     font-bold  text-yellow-500 text-xl
+     font-bold text-yellow-500 text-xl
     ;
   }
 
@@ -168,8 +183,7 @@
 
   .linha {
     @apply 
-     h-px w-[80%] block bg-gray-400 my-2
-    ;
+     h-px w-[80%] block bg-gray-400 my-2;
   }
 
   .planos ul {
@@ -207,4 +221,6 @@
   .contato p {
     @apply col-start-2;
   }
+
+  /*footer*/
 }
