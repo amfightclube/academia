@@ -65,7 +65,7 @@
 
   .menu li {
     @apply 
-     mt-[10px] mr-auto mb-[15px] ml-[40px]
+     mr-auto ml-[40px] my-3
      md:m-0
      ;
   }

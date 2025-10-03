@@ -225,6 +225,9 @@
   .relative {
     position: relative;
   }
+  .z-50 {
+    z-index: 50;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -811,9 +814,8 @@
     }
   }
   .menu li {
-    margin-top: 10px;
+    margin-block: calc(var(--spacing) * 3);
     margin-right: auto;
-    margin-bottom: 15px;
     margin-left: 40px;
     @media (width >= 48rem) {
       margin: calc(var(--spacing) * 0);
