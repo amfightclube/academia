@@ -27,8 +27,9 @@
   .bnt-larg-agendar {
     @apply  
     bg-white text-red-500 w-50 h-10 rounded-full font-bold
-      text-base my-4 shadow-lg shadow-white/30 active:scale-105 duration-200
-      lg:hover:scale-105
+      text-base my-4 shadow-lg shadow-white/30 
+      
+      active:scale-105 duration-200 lg:hover:scale-105
     ;
   }
 
@@ -37,11 +38,32 @@
       flex justify-center items-center gap-2 h-10 w-[70%] 
       self-center bg-green-500 text-white rounded-full
       text-base my-4 shadow-lg shadow-green-500/30 font-bold 
+
       lg:hover:scale-105 duration-300 hover:bg-green-700 active:scale-105
-     
+      active:bg-green-700
     ; 
   }
 
+  .bnt-inscreva {
+    @apply
+    bg-white h-12 w-42 text-base rounded-sm  ml-4 font-bold
+     
+    lg:hover:bg-yellow-400 lg:hover:text-white hover:shadow-none
+      shadow-sm text-blue-950 shadow-white active:scale-105 duration-200
+    active:bg-yellow-400 active:text-blue-950
+      active:shadow-none
+     ;
+  }
+
+  .bnt-comecar {
+      @apply 
+        bg-blue-500 text-white p-3 w-[80%] mt-3 rounded-2xl
+        text-lg shadow-lg shadow-blue-500/50 
+        
+        transition-transform duration-200 lg:hover:bg-blue-600
+        lg:hover:scale-105 active:scale-105 active:bg-blue-600
+      ;
+    }
   .alinhamento {
     @apply flex flex-col items-center;
   }
@@ -82,16 +104,7 @@
   /*margin: 10px auto 25px auto;*/
 
 
-  .bnt-inscreva {
-    @apply
-    bg-white h-12 w-42 text-base rounded-sm  ml-4 font-bold
-     
-    lg:hover:bg-yellow-400 lg:hover:text-white hover:shadow-none
-      shadow-sm text-blue-950 shadow-white active:scale-105 duration-200
-    active:bg-yellow-400 active:text-blue-950
-      active:shadow-none
-     ;
-  }
+
 
   /*icones artes marciais*/
   .intro-artes {
@@ -195,15 +208,7 @@
     @apply text-gray-950 text-3xl;
   }
 
-  .bnt-comecar {
-    @apply 
-      bg-blue-500 text-white p-3 w-[80%] mt-3 rounded-2xl
-      text-lg shadow-lg shadow-blue-500/50 
-      
-      transition-transform duration-200 lg:hover:bg-blue-600
-      lg:hover:scale-105 active:scale-105 active:bg-blue-600
-    ;
-  }
+  
   .mais-pop {
     @apply 
     bg-amber-400 absolute text-black p-1 px-4 rounded-3xl
