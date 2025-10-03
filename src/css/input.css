@@ -39,7 +39,7 @@
       self-center bg-green-500 text-white rounded-full
       text-base my-4 shadow-lg shadow-green-500/30 font-bold 
 
-      lg:hover:scale-105 duration-300 hover:bg-green-700 active:scale-105
+      lg:hover:scale-105 duration-300 lg:hover:bg-green-700 active:scale-105
       active:bg-green-700
     ; 
   }
