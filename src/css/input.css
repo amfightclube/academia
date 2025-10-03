@@ -4,9 +4,20 @@
   --font-bevietnan: "Work Sans", sans-serif;
 }
 
+@layer utilities {
+  @keyframes slideFadein {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
 @layer components {
   .reset-all {
     all: unset;
+  }
+
+  .animate-cascata {
+    animation: slideFadein 0.8s ease-out forwards; /*faz o elemento ficar na posicao final*/
   }
 
   .intro-artes img {
