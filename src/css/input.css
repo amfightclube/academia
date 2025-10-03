@@ -28,7 +28,7 @@
     @apply  
     bg-white text-red-500 w-50 h-10 rounded-full font-bold
       text-base my-4 shadow-lg shadow-white/30 active:scale-105 duration-200
-      hover:scale-105
+      lg:hover:scale-105
     ;
   }
 
@@ -37,7 +37,7 @@
       flex justify-center items-center gap-2 h-10 w-[70%] 
       self-center bg-green-500 text-white rounded-full
       text-base my-4 shadow-lg shadow-green-500/30 font-bold 
-      hover:scale-105 duration-300 hover:bg-green-700 active:scale-105
+      lg:hover:scale-105 duration-300 hover:bg-green-700 active:scale-105
      
     ; 
   }
@@ -200,8 +200,8 @@
       bg-blue-500 text-white p-3 w-[80%] mt-3 rounded-2xl
       text-lg shadow-lg shadow-blue-500/50 
       
-      transition-transform duration-200 hover:bg-blue-600
-      hover:scale-105 active:scale-105 active:bg-blue-600
+      transition-transform duration-200 lg:hover:bg-blue-600
+      lg:hover:scale-105 active:scale-105 active:bg-blue-600
     ;
   }
   .mais-pop {
