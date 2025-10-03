@@ -16,7 +16,8 @@
   .bnt-larg-agendar {
     @apply  
     bg-white text-red-500 w-50 h-10 rounded-full font-bold
-      text-base my-4 shadow-lg shadow-white/30
+      text-base my-4 shadow-lg shadow-white/30 active:scale-105 duration-200
+      hover:scale-105
     ;
   }
 
@@ -25,7 +26,9 @@
       flex justify-center items-center gap-2 h-10 w-[70%] 
       self-center bg-green-500 text-white rounded-full
       text-base my-4 shadow-lg shadow-green-500/30 font-bold 
-    ;
+      hover:scale-105 duration-300 hover:bg-green-700 active:scale-105
+     
+    ; 
   }
 
   .alinhamento {
@@ -56,7 +59,7 @@
      ;
   }
 
-  .menu button {
+  .menu  button {
     @apply 
      active:text-orange-400 active:text-xl
      lg:hover:text-orange-400 hover:text-xl;
@@ -70,9 +73,12 @@
 
   .bnt-inscreva {
     @apply
-     bg-white h-12 w-42 text-base rounded-sm  ml-4
-     font-bold lg:hover:bg-yellow-400 lg:hover:text-white
-     shadow-sm text-blue-950 shadow-white
+    bg-white h-12 w-42 text-base rounded-sm  ml-4 font-bold
+     
+    lg:hover:bg-yellow-400 lg:hover:text-white hover:shadow-none
+      shadow-sm text-blue-950 shadow-white active:scale-105 duration-200
+    active:bg-yellow-400 active:text-blue-950
+      active:shadow-none
      ;
   }
 
@@ -181,7 +187,10 @@
   .bnt-comecar {
     @apply 
       bg-blue-500 text-white p-3 w-[80%] mt-3 rounded-2xl
-      text-lg shadow-lg shadow-blue-500/50
+      text-lg shadow-lg shadow-blue-500/50 
+      
+      transition-transform duration-200 hover:bg-blue-600
+      hover:scale-105 active:scale-105 active:bg-blue-600
     ;
   }
   .mais-pop {
@@ -234,18 +243,27 @@
   .footer-subtitulo {
     @apply  text-white font-bold pl-1 my-3;
   }
+
   .footer-list {
     @apply pl-1;
+  }
+
+  .footer-list li {
+    @apply flex items-center hover:text-yellow-500;
+  }
+
+  .footer-list svg {
+    @apply size-3 mb-[2px];
   }
 
   .list-social li {
     @apply 
      size-8 bg-gray-500 rounded-md flex justify-center 
-     items-center;
+     items-center hover:bg-red-500; 
   }
 
-  .list-social img {
-    @apply size-full;
+  .list-social svg {
+    @apply text-white;
   }
-
 }
+

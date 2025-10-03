@@ -24,13 +24,21 @@
       <ul class="
         md:flex lg:gap-7 md:h-full w-full md:w-auto
       ">
-        <li><button>Home</button></li>
+        <li>
+          <button>Home</button>
+        </li>
         <span></span>
-        <li><button>navegar</button></li>
+        <li>
+          <button>navegar</button>
+        </li>
         <span></span>
-        <li><button>planos</button></li>
+        <li>
+          <button>planos</button>
+        </li>
         <span></span>
-        <li><button>contato</button></li>
+        <li>
+          <button>contato</button>
+        </li>
         <span></span>
       </ul>
     </nav>
@@ -132,7 +140,8 @@
       <section class="alinhamento my-8">
         <button class="
        bg-red-600 text-white h-12 w-42 shadow-lg shadow-red-500/50
-       lg:hover:bg-yellow-400  rounded-sm  
+       lg:hover:bg-yellow-400 rounded-sm hover:shadow-yellow-500/50
+         active:scale-105 duration-300 active:bg-red-900
         "> 
         Inscreva-se agora
        </button>
@@ -227,9 +236,13 @@
           começar agora
         </button>
       </div>
+    </section>
+  </main>
 
+  <aside class="alinhamento w-full">
+    <section class="w-full">
       <div class="
-        w-screen bg-linear-to-r/srgb from-red-500 to-red-800 mt-10
+        w-full bg-linear-to-r/srgb from-red-500 to-red-800 
         alinhamento pl-5 text-white gap-1 py-5
       "> 
         <strong class="
@@ -248,7 +261,7 @@
     </section>
 
     <section class="
-     flex flex-col items-start  w-screen bg-slate-900
+     flex flex-col items-start  w-full bg-slate-900
      pl-5 gap-2 py-5
     ">
       <h2 class="
@@ -277,12 +290,12 @@
       </ul>
       
       <div class="
-        h-55 w-[95%] p-1 bg-gray-800 rounded-sm my-2
+        h-55 w-[95%] p-1 bg-gray-800 rounded-sm my-2 self-center
       ">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d570.036885047557!2d-36.063523242123914!3d-9.003877907491535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1759431148755!5m2!1sen!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         class=" w-full h-full
         ">
-      </iframe>
+        </iframe>
       </div>
       
       <button class="bnt-zap">
@@ -291,7 +304,7 @@
         Chamar no WhatsApp
       </button>
     </section>
-  </main>
+  </aside>
 
   <footer class="flex flex-col items-start py-5 px-4 w-full">
     <div class="flex gap-2 my-4 self-center items-center">
@@ -308,14 +321,51 @@
 
     <h2 class="footer-subtitulo">Links Rápidos</h2>
     <ul class="footer-list">
-      <li><a href="#">Sobre-nós</a></li>
-      <li><a href="#">modalidades</a></li>
-      <li><a href="#">planos</a></li>
-      <li><a href="#">Home</a></li>
+      <li>    
+        <label for="sobre">
+          <svg 
+         xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
+        ">
+          <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
+        </svg>
+        </label>
+        
+        <a href="#" id="sobre">Sobre-nós</a>
+      </li>
+      <li>
+        <label for="moda">
+          <svg 
+         xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
+        ">
+          <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
+        </svg>
+        </label>
+        <a href="#" id="moda">modalidades</a>
+      </li>
+      <li>
+        <label for="planos">
+          <svg 
+         xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
+        ">
+          <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
+        </svg>
+        </label>
+        <a href="#" id="planos">planos</a>
+      </li>
+      <li>
+       <label for="home">
+          <svg 
+         xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
+        ">
+          <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
+        </svg>
+        </label>
+        <a href="#" id="home">Home</a>
+      </li>
     </ul>
 
     <h2 class="text-white font-bold pl-1 my-3">Hórarios</h2>
-    <ul class="footer-list">
+    <ul class="pl-1">
       <li class="mb-2"><span>Todas modalidades</span><br>Seg - Sex: 19:30h as 21:00h</li>
       <li>Jiu-jitsu: Terça e quinta</li>
       <li>Muay Thai: Seg e quarta</li>
@@ -324,15 +374,25 @@
 
     <h2 class="footer-subtitulo">Redes Socias</h2>
     <ul class="list-social pl-1">
-      <li><a href="#"><img src="./src/img/icon-instagram-white.svg" alt=""></a></li>
+      <li>
+        <a href="#">
+          <img src="./src/img/icon-instagram-white.svg" alt="icone-instagram">
+        </a>
+      </li>
     </ul>
 
     <span class="linha self-center w-full my-4 bg-gray-700"></span>
     <p class="
       text-center
     ">
-     © 2025 <strong class="text-yellow-500">a.m fight clube</strong>. Todos os direitos reservados.
+     © 2025 <strong class="text-yellow-500 self-center">a.m fight clube</strong>. Todos os direitos reservados.
     </p>
+
+    <button class="px-4 py-2 bg-blue-600 
+    text-white rounded-md transition-transform duration-200 hover:scale-105">
+  Clique aqui
+  </button>
+
   </footer>
 </body>
 </html>
