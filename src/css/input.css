@@ -20,10 +20,6 @@
     animation: slideFadein 0.8s ease-out forwards; /*faz o elemento ficar na posicao final*/
   }
 
-  .intro-artes img {
-    @apply size-15;
-  }
-   
   .bnt-larg-agendar {
     @apply  
     bg-white text-red-500 w-50 h-10 rounded-full font-bold
@@ -101,12 +97,11 @@
   .menu span {
     @apply h-px w-[85%] bg-gray-700 block m-auto md:hidden;
   }
-  /*margin: 10px auto 25px auto;*/
+  /*icones artes marciais*/ 
+  .intro-artes img {
+    @apply size-15;
+  }
 
-
-
-
-  /*icones artes marciais*/
   .intro-artes {
     @apply h-60  w-[90%] my-10;
   }
@@ -129,9 +124,18 @@
 
   .intro-artes p {
     @apply 
-     font-medium text-lg col-start-2 row-start-2 text-gray-500
+     font-medium text-lg col-start-2 row-start-2 text-gray-300
+     mb-2
     ; 
   } 
+
+  .intro-artes ul {
+    @apply m-auto col-span-full my-2 text-sm text-justify list-disc w-[76%];
+  }
+
+  .intro-artes li {
+    @apply my-2;
+  }
   /*sobre nos*/
   .about {
     @apply bg-gray-200 w-full px-5 pt-10;
