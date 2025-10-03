@@ -14,3 +14,19 @@ bntMenu.addEventListener('click', () => {
   menu.classList.toggle('opacity-100');
   menu.classList.toggle('visible');
 });
+
+//Menu fecha automaticamente ao rolar para baixo.
+const obeserver = new IntersectionObserver((listElemntsObs) => {
+  listElemntsObs.forEach(elementObs => {
+    if (!elementObs.isIntersecting) {
+      let elemento = elementObs.target;
+      const bntImg = bntMenu.querySelector('img');
+      
+      bntImg.src = "./src/img/icon-hamburger.svg";
+      elemento.classList.replace('opacity-100', "opacity-0");
+      elemento.classList.replace('visible', "invisible");
+    };
+  });
+});
+
+obeserver.observe(menu);
