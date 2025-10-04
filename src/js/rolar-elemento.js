@@ -2,7 +2,6 @@ import { pegaElemento } from "./ultils.js";
 
 const listaBnts = pegaElemento('.menu button', 2);
 const listLinks = pegaElemento('.footer-list button', 2);
-console.log(listLinks)
 
 const scrollElement = (elemento) => {
   elemento.scrollIntoView({ //1
