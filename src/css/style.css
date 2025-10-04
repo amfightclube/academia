@@ -356,6 +356,9 @@
   .w-\[80\%\] {
     width: 80%;
   }
+  .w-\[92\%\] {
+    width: 92%;
+  }
   .w-\[95\%\] {
     width: 95%;
   }
@@ -461,11 +464,29 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
+  }
+  .pr-5 {
+    padding-right: calc(var(--spacing) * 5);
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pb-7 {
+    padding-bottom: calc(var(--spacing) * 7);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
   }
   .pl-1 {
     padding-left: calc(var(--spacing) * 1);
