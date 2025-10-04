@@ -1,5 +1,6 @@
 import './components/menu.js';
 import './components/dots.js';
+import './rolar-elemento.js';
 
 const elementos = document.querySelectorAll('[data-animate]');//3
 
