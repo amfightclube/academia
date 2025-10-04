@@ -16,7 +16,7 @@ listBntsMesg.forEach(botao => {
     } else msg = '👋 Olá, vim pelo site do a.m fight clube, quero saber mais!';
 
     console.log(msg)
-    const numero = '5582993358665';
+    const numero = '5582991516883';
     const link = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
     window.open(link, '_blank');
   });
