@@ -9,7 +9,7 @@ listBntsMesg.forEach(botao => {
     if (botao.hasAttribute('data-planos')) {
       let arte = botao.dataset.planos;
       let valor = botao.dataset.valor;
-      msg = `Olá! Vim pelo site do A.M Fight Clube.\nEscolhi o plano:${arte} \nValor: ${valor} Por favor, me envie mais informações!
+      msg = `👋 Olá! Vim pelo site do A.M Fight Clube.\nEscolhi o plano:${arte} \nValor: ${valor}\nPor favor, me envie mais informações!
       `
     } else if (botao.hasAttribute('data-agendar')) {
       msg = '👋 Olá, vim pelo site do a.m fight clube e quero agendar minha aula experimental!';
