@@ -269,7 +269,11 @@
   }
 
   .footer-list li {
-    @apply flex items-center hover:text-yellow-500;
+    @apply flex items-center lg:hover:text-yellow-500;
+  }
+
+  .footer-list button {
+    @apply active:text-yellow-500;
   }
 
   .footer-list svg {
