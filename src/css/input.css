@@ -40,7 +40,8 @@
       text-base my-4 shadow-lg shadow-green-500/30 font-bold 
 
       lg:hover:scale-105 duration-300 lg:hover:bg-green-700 active:scale-105
-      active:bg-green-700
+      active:bg-green-700 lg:w-100 lg:col-span-full lg:m-auto lg:my-10
+      lg:h-12
     ; 
   }
 
@@ -77,8 +78,8 @@
      left-1/2 -translate-x-1/2 flex flex-col justify-center 
      items-center font-bold text-white opacity-0 invisible
 
-     lg:visible md:opacity-100 lg:w-110 lg:h-6 lg:shadow-none 
-     lg:translate-x-0 lg:static sm:w-90  sm:h-60
+     lg:visible lg:opacity-100 lg:w-130 lg:h-full lg:shadow-none 
+     lg:translate-x-0 lg:static 
     ;
   }
 
@@ -99,18 +100,18 @@
     @apply h-px w-[85%] bg-gray-700 block m-auto md:hidden;
   }
   /*icones artes marciais*/ 
-  .intro-artes img {
-    @apply size-15;
+   .intro-artes {
+    @apply h-235 w-[90%] my-10 md:flex lg:h-100 lg:items-center lg:justify-around;
   }
 
-  .intro-artes {
-    @apply h-60  w-[90%] my-10;
+  .intro-artes img {
+    @apply size-15;
   }
 
   .intro-artes div {
     @apply 
       grid grid-cols-[auto_1fr] grid-rows-2 
-      gap-x-3
+      gap-x-3 lg:w-100
     ;
   }
   .intro-artes img {
@@ -139,7 +140,8 @@
   }
   /*sobre nos*/
   .about {
-    @apply bg-gray-200 w-full px-5 pt-10;
+    @apply bg-gray-200 w-full px-5 pt-10 pb-5 lg:grid lg:grid-cols-2 
+    lg:grid-rows-3;
   }
 
   .subtitulo-about {
@@ -150,7 +152,7 @@
     @apply 
      h-35 w-full rounded-sm
      bg-[url(../img/img-jiu-jitsu-destaque.jpg)]
-     bg-cover
+     bg-cover lg:h-55
     ;
   }
 
@@ -163,7 +165,7 @@
 
   .galaria-alunos {
     @apply 
-    w-full h-55 my-5 overflow-x-auto flex gap-4 shadow-2xl;
+    w-full h-55 my-5 overflow-x-auto flex gap-4 shadow-2xl lg:h-80;
     scrollbar-width: none;
   }
   
@@ -238,12 +240,13 @@
   /*Contato*/
   .contato {
     @apply 
-      grid grid-cols-[auto_1fr] grid-rows-2 text-sm gap-x-2 my-3;
+      grid grid-cols-[auto_1fr] grid-rows-2 text-sm gap-x-2 my-3
+      lg:my-5;
   }
   .contato div {
     @apply 
       size-10 border-1 border-red-500 rounded-md
-      col-end-2 row-span-full
+      col-end-2 row-span-full lg:size-12
     ;
   }
 
@@ -252,11 +255,11 @@
   }
 
   .contato strong {
-    @apply text-white col-start-2 row-end-2 ;
+    @apply text-white col-start-2 row-end-2 lg:text-xl;
   }
 
   .contato p {
-    @apply col-start-2;
+    @apply col-start-2 lg:text-lg;
   }
 
   /*footer*/
