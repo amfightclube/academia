@@ -32,11 +32,11 @@
           <button data-posicao="#Pos-Jiu-jitsu">Jiu-Jitsu</button>
         </li>
         <span></span>
-        <li>
+        <li class="lg:hidden">
           <button data-posicao="#Pos-muay">Muay Thai</button>
         </li>
         <span></span>
-        <li>
+        <li class="lg:hidden">
           <button data-posicao="#Pos-box">Boxer</button>
         </li>
         <span></span>
@@ -148,10 +148,12 @@
 
     <section class="about alinhamento" id="Pos-sobre">
       <div class="img-about opacity-0" data-animate></div>
-      <section>
+      <section class="
+        col-end-2 row-end-3 lg:w-[70%] lg:justify-self-start lg:self-start lg:ml-[5%]
+      "> 
         <h2 class="subtitulo-about opacity-0" data-animate>Sobre-nós</h2>
         <p class="
-          text-lg opacity-0 text-justify
+          text-lg opacity-0 text-justify 
         " data-animate>
           A equipe AM Fight Clube é um espaço de artes marciais que promove o desenvolvimento físico, técnico e mental de seus alunos através de modalidades tradicionais e muito respeitadas no mundo das lutas: Jiu-Jítsu, Muay Thai e Boxe.
         </p>
@@ -163,7 +165,7 @@
       </section>
       
 
-      <section class="alinhamento" data-animate>  <!--galeria-->
+      <section class="alinhamento lg:col-start-1 lg:row-start-3 lg:row-end-3" data-animate>  <!--galeria-->
         <h2 class="subtitulo-about">Alunos</h2>
         <div class="galaria-alunos">
           <img src="./src/img/galeria/img-sessao-apresentacao.jpg" alt="imagem-alunos">
@@ -171,15 +173,18 @@
           <img src="./src/img/galeria/IMG-20250903-WA0057.jpg" alt="imagem-alunos">
         </div>
   
-        <div class="container-dots flex">
+        <div class="container-dots flex lg:hidden">
           <span class="dot active"></span>
           <span class="dot"></span>
           <span class="dot"></span>
         </div>
       </section>
      
-      <section class="w-full alinhamento">
-        <h2 class="my-5 ml-[2px] font-bold text-xl text-center text-red-500" data-animate>Professor</h2>
+      <section class="
+       w-full alinhamento col-start-2 row-start-2 row-end-4
+       lg:self-start my-5
+      ">
+        <h2 class="my-5 ml-[2px] font-bold text-xl text-center text-red-500 lg:mt-0" data-animate>Professor</h2>
         <div class="bg-mestre opacity-0" data-animate></div>
         <a href="https://www.instagram.com/am.fightclub/" >
           <img src="./src/img/icon-instagram.svg" alt="icone-instagram" class="
@@ -188,7 +193,7 @@
         </a>
       </section>
   
-    <section class="planos alinhamento lg:w-full" id="Pos-planos">
+    <section class="planos alinhamento lg:w-full row-start-4 col-span-full lg:mt-10" id="Pos-planos">
       <button class="
        bg-red-600 text-white h-12 w-42 shadow-lg shadow-red-500/50
        lg:hover:bg-yellow-400 rounded-sm lg:hover:shadow-yellow-500/50
@@ -198,14 +203,14 @@
       </button>
 
       <p class="mt-2 text-blue-950 ">Aula experimental</p>
-      <p class="font-bold text-green-500">Gratís</p>
+      <p class="font-bold text-green-500 mb-4">Gratís</p>
 
       <h2 class="text-xl font-bold text-blue-950">Planos Mesais</h2>
       <p class="
        font-semibold text-gray-500 w-70 text-center mb-5
       ">Escolha o plano ideal para seus objetivos</p>
 
-      <div class="w-full lg:flex lg:gap-30">
+      <div class="w-full alinhamento lg:w-[70%] flex lg:gap-5 lg:justify-evenly lg:flex-row">
         <div class="alinhamento border-1 border-yellow-400 relative card opacity-0"  data-animate> 
         <span class="mais-pop">
           Mais popular
@@ -321,9 +326,9 @@
     " id="Pos-contato">
       <div class="lg:col-end-2 lg:row-span-full ">
         <h2 class="
-          font-bold text-2xl text-white pl-5  lg:text-3xl lg:my-5
+          font-bold text-2xl text-white pl-5  lg:text-2xl lg:my-5
           ">Fale conosco</h2>
-        <p class="pl-5 w-[90%] xl:w-110 xl:text-xl lg:my-5">
+        <p class="pl-5 w-[90%] xl:w-110  lg:my-5">
           Estamos prontos para atender suas dúvidas e ajudar 
           você a começar sua jornada.
         </p>
@@ -346,10 +351,9 @@
         </ul>
       </div>
       
-      
       <div class="
         h-55 w-[92%] p-1 bg-gray-800 rounded-sm my-2 
-        xl:w-[70%] xl:h-70 lg:col-start-2  lg:pr-5
+        xl:w-[70%] xl:h-70 lg:col-start-2 self-center
       ">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d570.036885047557!2d-36.063523242123914!3d-9.003877907491535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1759431148755!5m2!1sen!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         class=" w-full h-full
@@ -365,8 +369,11 @@
     </section>
   </aside>
 
-  <footer class="flex flex-col items-start py-5 px-4 w-full">
-    <div class="flex gap-2 my-4 self-center items-center">
+  <footer class="
+    flex flex-col items-start py-5 px-4 w-full lg:grid lg:grid-cols-4
+    lg:grid-rows-[auto_auto_auto] 
+  ">
+    <div class="flex gap-2 my-4 self-center items-center lg:col-span-full">
       <a 
         href="#"><img src="./src/img/marca.png" alt="logo" class="
         size-12">
@@ -378,73 +385,89 @@
       </p>
     </div>
 
-    <h2 class="footer-subtitulo">Links Rápidos</h2>
-    <ul class="footer-list">
-      <li>    
-        <label for="sobre">
-          <svg 
-         xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
-        ">
-          <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
-        </svg>
-        </label>
-        <button data-posicao="#Pos-Inicio">início</button>
-      </li>
-      <li>
-        <label for="moda">
-          <svg 
-         xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
-        ">
-          <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
-        </svg>
-        </label>
-        <button data-posicao="#Pos-Jiu-jitsu">modalidades</button>
-      </li>
-      <li>
-        <label for="planos">
-          <svg 
-         xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
-        ">
-          <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
-        </svg>
-        </label>
-        <button data-posicao="#Pos-planos">planos</button>
-      </li>
-      <li>
-       <label for="home">
-          <svg 
-         xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
-        ">
-          <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
-        </svg>
-        </label>
-        <button data-posicao="#Pos-sobre">Sobre-nós</button>
-      </li>
-    </ul>
-
-    <h2 class="text-white font-bold pl-1 my-3">Hórarios</h2>
-    <ul class="pl-1">
-      <li class="mb-2"><span>Todas modalidades</span><br>Seg - Sex: 19:30h as 21:00h</li>
-      <li>Jiu-jitsu: Terça e quinta</li>
-      <li>Muay Thai: quarta e sex</li>
-      <li>Boxer: Seg</li>
-    </ul>
-
-    <h2 class="footer-subtitulo">Redes Socias</h2>
-    <ul class="list-social pl-1">
-      <li>
-        <a href="https://www.instagram.com/am.fightclub/">
-          <img src="./src/img/icon-instagram-white.svg" alt="icone-instagram">
-        </a>
-      </li>
-    </ul>
-
-    <span class="linha self-center w-full my-4 bg-gray-700"></span>
-    <p class="
-      text-center
+    <div class="
+      lg:col-start-2 lg:col-end-3 lg:row-start-2
     ">
-     © 2025 <strong class="text-yellow-500 self-center">a.m fight clube</strong>. Todos os direitos reservados.
-    </p>
+      <h2 class="footer-subtitulo">Links Rápidos</h2>
+      <ul class="footer-list">
+        <li>
+          <label for="sobre">
+            <svg
+           xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
+          ">
+            <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
+          </svg>
+          </label>
+          <button data-posicao="#Pos-Inicio">início</button>
+        </li>
+        <li>
+          <label for="moda">
+            <svg
+           xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
+          ">
+            <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
+          </svg>
+          </label>
+          <button data-posicao="#Pos-Jiu-jitsu">modalidades</button>
+        </li>
+        <li>
+          <label for="planos">
+            <svg
+           xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
+          ">
+            <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
+          </svg>
+          </label>
+          <button data-posicao="#Pos-planos">planos</button>
+        </li>
+        <li>
+         <label for="home">
+            <svg
+           xmlns="http://www.w3.org/2000/svg" width="15" height="20"  viewBox="0 0 21 20
+          ">
+            <path fill="currentColor" fill-rule="evenodd" d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413"/>
+          </svg>
+          </label>
+          <button data-posicao="#Pos-sobre">Sobre-nós</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="
+      lg:col-start-1 lg:col-end-2 lg:row-start-2
+    ">
+      <h2 class="text-white font-bold pl-1 my-3">Hórarios</h2>
+      <ul class="pl-1">
+        <li class="mb-2"><span>Todas modalidades</span><br>Seg - Sex: 19:30h as 21:00h</li>
+        <li>Jiu-jitsu: Terça e quinta</li>
+        <li>Muay Thai: quarta e sex</li>
+        <li>Boxer: Seg</li>
+      </ul>
+    </div>
+   
+
+    <div class="
+      lg:col-start-3 row-start-2
+    ">
+      <h2 class="footer-subtitulo">Redes Socias</h2>
+      <ul class="list-social pl-1">
+        <li>
+          <a href="https://www.instagram.com/am.fightclub/">
+            <img src="./src/img/icon-instagram-white.svg" alt="icone-instagram">
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="
+      lg:col-span-full
+    ">
+      <span class="linha self-center w-full my-4 bg-gray-700"></span>
+      <p class="text-center">
+       © 2025 <strong class="text-yellow-500 self-center">a.m fight clube</strong>. Todos os direitos reservados.
+      </p>
+    </div>
+   
   </footer>
   <!-- Por:jose33-afk -->
 </body>

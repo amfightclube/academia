@@ -141,7 +141,7 @@
   /*sobre nos*/
   .about {
     @apply bg-gray-200 w-full px-5 pt-10 pb-5 lg:grid lg:grid-cols-2 
-    lg:grid-rows-3;
+    lg:grid-rows-[auto_auto_auto_auto] lg:justify-items-center;
   }
 
   .subtitulo-about {
@@ -152,14 +152,15 @@
     @apply 
      h-35 w-full rounded-sm
      bg-[url(../img/img-jiu-jitsu-destaque.jpg)]
-     bg-cover lg:h-55
+     bg-cover lg:h-55 col-end-2 lg:w-[90%] lg:self-start lg:row-span-full
+     lg:row-end-2
     ;
   }
 
   .bg-mestre {
     @apply 
      h-85 w-70 bg-[url(../img/IMG-mestre-fundo-cinza.png)]
-     bg-contain bg-no-repeat 
+     bg-contain bg-no-repeat  lg:h-120 lg:w-100
     ;
   }
 
@@ -194,7 +195,7 @@
 
   .card {
     @apply 
-     w-[95%] rounded-xl my-5 p-5
+     w-[95%] rounded-xl my-5 p-5 lg:w-85
      justify-center shadow-md bg-white border-1
     ;
   }
@@ -255,7 +256,7 @@
   }
 
   .contato strong {
-    @apply text-white col-start-2 row-end-2 lg:text-xl;
+    @apply text-white col-start-2 row-end-2 lg:text-sm;
   }
 
   .contato p {
