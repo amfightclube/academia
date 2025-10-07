@@ -105,7 +105,8 @@
     @apply 
      h-235 w-[90%] my-10 flex flex-col 
      
-     lg:h-100 lg:items-center lg:justify-around justify-center
+     sm:w-[70%] md:w-140 lg:flex-row
+     lg:h-100 lg:items-center lg:justify-around justify-center 
      ;
   }
 
@@ -155,10 +156,10 @@
 
   .img-about {
     @apply  
-     h-35 w-full rounded-sm bg-[url(../img/img-jiu-jitsu-destaque.jpg)] 
+     h-40 w-full rounded-sm bg-[url(../img/img-jiu-jitsu-destaque.jpg)] 
      bg-top bg-cover 
      
-     sm:h-50
+     sm:h-50 md:h-70
      lg:h-55 col-end-2 lg:w-[90%] lg:self-start lg:row-span-full
      lg:row-end-2
     ;
@@ -207,10 +208,9 @@
 
   .card {
     @apply 
-     w-[95%] rounded-xl my-5 p-5 
+     w-85 rounded-xl p-5 
      justify-center shadow-md bg-white border-1
-     sm:w-[65%]
-     lg:w-85
+     lg:w-95
     ;
   }
 
