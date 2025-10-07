@@ -37,8 +37,9 @@
     @apply 
       flex justify-center items-center gap-2 h-10 w-[70%] 
       self-center bg-green-500 text-white rounded-full
-      text-base my-4 shadow-lg shadow-green-500/30 font-bold 
+      text-base my-4 shadow-lg shadow-green-500/30 font-bold
 
+      sm:w-100
       lg:hover:scale-105 duration-300 lg:hover:bg-green-700 active:scale-105
       active:bg-green-700 lg:w-100 lg:col-span-full lg:m-auto lg:my-10
       lg:h-12
@@ -101,7 +102,11 @@
   }
   /*icones artes marciais*/ 
    .intro-artes {
-    @apply h-235 w-[90%] my-10 md:flex lg:h-100 lg:items-center lg:justify-around;
+    @apply 
+     h-235 w-[90%] my-10 flex flex-col 
+     
+     lg:h-100 lg:items-center lg:justify-around justify-center
+     ;
   }
 
   .intro-artes img {
@@ -132,7 +137,7 @@
   } 
 
   .intro-artes ul {
-    @apply m-auto col-span-full my-2 text-sm text-justify list-disc w-[76%];
+    @apply m-auto col-span-full my-2 text-sm text-justify list-disc w-[76%] sm:w-[70%] ;
   }
 
   .intro-artes li {
@@ -149,10 +154,12 @@
   }
 
   .img-about {
-    @apply 
-     h-35 w-full rounded-sm
-     bg-[url(../img/img-jiu-jitsu-destaque.jpg)]
-     bg-cover lg:h-55 col-end-2 lg:w-[90%] lg:self-start lg:row-span-full
+    @apply  
+     h-35 w-full rounded-sm bg-[url(../img/img-jiu-jitsu-destaque.jpg)] 
+     bg-top bg-cover 
+     
+     sm:h-50
+     lg:h-55 col-end-2 lg:w-[90%] lg:self-start lg:row-span-full
      lg:row-end-2
     ;
   }
@@ -160,13 +167,18 @@
   .bg-mestre {
     @apply 
      h-85 w-70 bg-[url(../img/IMG-mestre-fundo-cinza.png)]
-     bg-contain bg-no-repeat  lg:h-120 lg:w-100
+     bg-contain bg-no-repeat  
+     
+     sm:h-105 sm:w-85
+     lg:h-120 lg:w-100
     ;
   }
 
   .galaria-alunos {
     @apply 
-    w-full h-55 my-5 overflow-x-auto flex gap-4 shadow-2xl lg:h-80;
+    w-full h-55 my-5 overflow-x-auto flex gap-4 shadow-2xl 
+    sm:h-85
+    lg:h-80;
     scrollbar-width: none;
   }
   
@@ -195,8 +207,10 @@
 
   .card {
     @apply 
-     w-[95%] rounded-xl my-5 p-5 lg:w-85
+     w-[95%] rounded-xl my-5 p-5 
      justify-center shadow-md bg-white border-1
+     sm:w-[65%]
+     lg:w-85
     ;
   }
 
