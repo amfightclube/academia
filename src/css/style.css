@@ -1229,7 +1229,7 @@
     margin-block: calc(var(--spacing) * 5);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     @media (width >= 64rem) {
       margin: calc(var(--spacing) * 0);
@@ -1239,6 +1239,7 @@
     }
   }
   .container__top {
+    margin-right: 12%;
     display: flex;
     gap: calc(var(--spacing) * 2);
   }
@@ -1257,7 +1258,6 @@
   }
   .intro-artes ul {
     margin-block: calc(var(--spacing) * 2);
-    margin-left: calc(var(--spacing) * 10);
     width: 76%;
     list-style-type: disc;
     text-align: justify;
@@ -1301,7 +1301,7 @@
   }
   .img-about {
     grid-column-end: 2;
-    height: calc(var(--spacing) * 40);
+    height: calc(var(--spacing) * 30);
     width: 100%;
     border-radius: var(--radius-sm);
     background-image: url(../img/img-jiu-jitsu-destaque.jpg);
@@ -1311,7 +1311,7 @@
       height: calc(var(--spacing) * 50);
     }
     @media (width >= 48rem) {
-      height: calc(var(--spacing) * 70);
+      height: calc(var(--spacing) * 60);
     }
     @media (width >= 64rem) {
       grid-row: 1 / -1;
@@ -1320,7 +1320,7 @@
       grid-row-end: 2;
     }
     @media (width >= 64rem) {
-      height: calc(var(--spacing) * 55);
+      height: calc(var(--spacing) * 40);
     }
     @media (width >= 64rem) {
       width: 100%;

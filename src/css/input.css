@@ -111,11 +111,11 @@
   }
 
   .intro__container {
-    @apply my-5 lg:m-0 lg:h-95 flex flex-col justify-start items-start;
+    @apply my-5 lg:m-0 lg:h-95 flex flex-col justify-start items-center;
   }
   
   .container__top {
-    @apply flex gap-2;
+    @apply flex gap-2 mr-[12%];
   }
 
   .intro-artes img {
@@ -129,7 +129,7 @@
   } 
 
   .intro-artes ul {
-    @apply ml-10 my-2 text-sm text-justify list-disc w-[76%] sm:w-[70%] ;
+    @apply  my-2 text-sm text-justify list-disc w-[76%] sm:w-[70%] ;
   }
 
   .intro-artes li {
@@ -147,11 +147,11 @@
 
   .img-about {
     @apply  
-     h-40 w-full rounded-sm bg-[url(../img/img-jiu-jitsu-destaque.jpg)] 
+     h-30 w-full rounded-sm bg-[url(../img/img-jiu-jitsu-destaque.jpg)] 
      bg-top bg-cover 
      
-     sm:h-50 md:h-70
-     lg:h-55 col-end-2 lg:w-full lg:self-start lg:row-span-full
+     sm:h-50 md:h-60
+     lg:h-40 col-end-2 lg:w-full lg:self-start lg:row-span-full
      lg:row-end-2
     ;
   }
