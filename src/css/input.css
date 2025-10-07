@@ -151,7 +151,7 @@
      bg-top bg-cover 
      
      sm:h-50 md:h-60
-     lg:h-40 col-end-2 lg:w-full lg:self-start lg:row-span-full
+     lg:h-60 col-end-2 lg:w-full lg:self-start lg:row-span-full
      lg:row-end-2
     ;
   }

@@ -1320,7 +1320,7 @@
       grid-row-end: 2;
     }
     @media (width >= 64rem) {
-      height: calc(var(--spacing) * 40);
+      height: calc(var(--spacing) * 60);
     }
     @media (width >= 64rem) {
       width: 100%;
