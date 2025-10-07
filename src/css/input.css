@@ -79,7 +79,7 @@
      left-1/2 -translate-x-1/2 flex flex-col justify-center 
      items-center font-bold text-white opacity-0 invisible
 
-     lg:visible lg:opacity-100 lg:w-130 lg:h-full lg:shadow-none 
+     lg:visible lg:opacity-100 lg:w-auto lg:h-full lg:shadow-none 
      lg:translate-x-0 lg:static 
     ;
   }
@@ -103,25 +103,23 @@
   /*icones artes marciais*/ 
    .intro-artes {
     @apply 
-     h-235 w-[90%] my-10 flex flex-col 
+      w-[90%] max-w-130 my-10 flex flex-col 
      
-     sm:w-[70%] md:w-140 lg:flex-row
+     lg:flex-row lg:max-w-full
      lg:h-100 lg:items-center lg:justify-around justify-center 
      ;
   }
 
-  .intro-artes img {
-    @apply size-15;
+  .intro__container {
+    @apply my-5 lg:m-0 lg:h-95 flex flex-col justify-start items-start;
+  }
+  
+  .container__top {
+    @apply flex gap-2;
   }
 
-  .intro-artes div {
-    @apply 
-      grid grid-cols-[auto_1fr] grid-rows-2 
-      gap-x-3 lg:w-100
-    ;
-  }
   .intro-artes img {
-    @apply size-15 col-end-2 row-span-full object-contain;
+    @apply size-15 object-contain;
   }
 
   .intro-artes strong {
@@ -130,15 +128,8 @@
     ;
   } 
 
-  .intro-artes p {
-    @apply 
-     font-medium text-lg col-start-2 row-start-2 text-gray-300
-     mb-2
-    ; 
-  } 
-
   .intro-artes ul {
-    @apply m-auto col-span-full my-2 text-sm text-justify list-disc w-[76%] sm:w-[70%] ;
+    @apply ml-10 my-2 text-sm text-justify list-disc w-[76%] sm:w-[70%] ;
   }
 
   .intro-artes li {
@@ -160,7 +151,7 @@
      bg-top bg-cover 
      
      sm:h-50 md:h-70
-     lg:h-55 col-end-2 lg:w-[90%] lg:self-start lg:row-span-full
+     lg:h-55 col-end-2 lg:w-full lg:self-start lg:row-span-full
      lg:row-end-2
     ;
   }
@@ -171,7 +162,7 @@
      bg-contain bg-no-repeat  
      
      sm:h-105 sm:w-85
-     lg:h-120 lg:w-100
+     lg:h-110 lg:w-90
     ;
   }
 
