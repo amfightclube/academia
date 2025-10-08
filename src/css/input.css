@@ -180,14 +180,21 @@
 
   .galaria-alunos {
     @apply 
-    w-full h-55 my-5 overflow-x-auto flex gap-4 shadow-2xl 
-    sm:h-85
-    lg:h-80;
-    scrollbar-width: none;
+    w-full  h-55 sm:h-80 md:h-100  my-5 overflow-x-auto flex gap-4 shadow-2xl 
+    lg:h-90 2xl:h-105 relative transition-all duration-300 rounded-sm;
+    scrollbar-width: none
   }
   
   .galaria-alunos img {
     @apply w-full h-full shrink-0 object-cover;
+  }
+
+  .container-bnt-gl {
+    @apply absolute top-1/2 w-full flex justify-between;
+  }
+
+  .container-bnt-gl button {
+    @apply hidden lg:block mx-5 size-6 object-contain ;
   }
 
   .dot {
@@ -215,7 +222,7 @@
      w-85 rounded-xl p-5 
      justify-center shadow-md bg-white border-1
      lg:w-95 lg:transition-transform lg:duration-300
-     lg:ease-in-out  lg:hover:scale-105
+     lg:ease-in-out  lg:hover:scale-105 
     ;
   }
 
