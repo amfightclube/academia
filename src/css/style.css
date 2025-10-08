@@ -315,29 +315,23 @@
   .ml-\[3\%\] {
     margin-left: 3%;
   }
-  .ml-\[4\%\] {
-    margin-left: 4%;
-  }
   .ml-\[5\%\] {
     margin-left: 5%;
-  }
-  .ml-\[5\] {
-    margin-left: 5;
   }
   .ml-\[7\%\] {
     margin-left: 7%;
   }
-  .ml-\[10\%\] {
-    margin-left: 10%;
+  .ml-\[8\%\] {
+    margin-left: 8%;
   }
-  .ml-\[15\%\] {
-    margin-left: 15%;
+  .ml-\[9\%\] {
+    margin-left: 9%;
   }
-  .ml-\[20\%\] {
-    margin-left: 20%;
+  .ml-\[11\%\] {
+    margin-left: 11%;
   }
-  .ml-\[51\%\] {
-    margin-left: 51%;
+  .ml-\[12\%\] {
+    margin-left: 12%;
   }
   .block {
     display: block;
@@ -647,6 +641,31 @@
   .active\:bg-red-900 {
     &:active {
       background-color: var(--color-red-900);
+    }
+  }
+  .sm\:ml-\[6\%\] {
+    @media (width >= 40rem) {
+      margin-left: 6%;
+    }
+  }
+  .sm\:ml-\[6\] {
+    @media (width >= 40rem) {
+      margin-left: 6;
+    }
+  }
+  .sm\:ml-\[8\%\] {
+    @media (width >= 40rem) {
+      margin-left: 8%;
+    }
+  }
+  .sm\:ml-\[9\%\] {
+    @media (width >= 40rem) {
+      margin-left: 9%;
+    }
+  }
+  .sm\:ml-\[10\%\] {
+    @media (width >= 40rem) {
+      margin-left: 10%;
     }
   }
   .sm\:w-100 {
