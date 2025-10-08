@@ -15,11 +15,10 @@ const passarImg = (index) => {
 bnts.forEach(bnt => {
   bnt.addEventListener('click', () => {
     if (bnt.dataset.ide === "prox") {
-      if (posicao > 1) posicao = 0;
-      else posicao++;
+      posicao = (posicao + 1) % listImgs.length; //proximo
       passarImg(posicao);
     } else {
-      if (posicao > 0) posicao--;
+      posicao = (posicao - 1 + listImgs.length) % listImgs.length; // anterior
       passarImg(posicao);
     };
   });
