@@ -23,6 +23,7 @@
   .alinhamento {
     @apply flex flex-col items-center;
   }
+
   /*botoes*/
   .bnt-larg-agendar {
     @apply  
@@ -66,6 +67,7 @@
         lg:hover:scale-105 active:scale-105 active:bg-blue-600
       ;
     }
+
   /*Header*/
   .img-introd {
     @apply 
@@ -75,7 +77,7 @@
 
   .menu {
     @apply 
-     absolute top-[80px] bg-slate-950 w-[80vw] py-4 shadow-xl 
+     absolute top-[80px] bg-slate-950 w-[80vw] sm:w-[50vw] py-4 shadow-xl 
      left-1/2 -translate-x-1/2 flex flex-col justify-center 
      items-center font-bold text-white opacity-0 invisible
 
@@ -86,8 +88,8 @@
 
   .menu li {
     @apply 
-     mr-auto ml-[40px] my-3
-     md:m-0
+     mr-auto ml-[10%] my-3
+     lg:m-0
      ;
   }
 
@@ -99,8 +101,9 @@
   }
 
   .menu span {
-    @apply h-px w-[85%] bg-gray-700 block m-auto md:hidden;
+    @apply h-px w-[85%] bg-gray-700 block m-auto lg:hidden;
   }
+
   /*icones artes marciais*/ 
    .intro-artes {
     @apply 
@@ -143,6 +146,7 @@
   .intro-artes li {
     @apply my-2;
   }
+
   /*sobre nos*/
   .about {
     @apply bg-gray-200 w-full px-5 pt-10 pb-5 lg:grid lg:grid-cols-2 
@@ -200,6 +204,7 @@
   .aula-free-an {
     @apply h-20 bg-yellow-500 text-white;
   }
+
   /*planos*/
   .planos {
     @apply w-full;
@@ -252,6 +257,7 @@
   .icon-corr img {
     @apply size-5;
   } 
+  
   /*Contato*/
   .contato {
     @apply 
