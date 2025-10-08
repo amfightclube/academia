@@ -119,7 +119,11 @@
   }
   
   .container__top {
-    @apply flex gap-2  mr-auto;
+    @apply flex gap-2 ml-[7%] mr-auto;
+  }
+
+  .container__slogan {
+    @apply w-54;
   }
 
   .intro-artes img {

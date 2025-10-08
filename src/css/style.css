@@ -311,15 +311,6 @@
   .ml-\[2px\] {
     margin-left: 2px;
   }
-  .ml-\[3\%\] {
-    margin-left: 3%;
-  }
-  .ml-\[5\%\] {
-    margin-left: 5%;
-  }
-  .ml-\[7\%\] {
-    margin-left: 7%;
-  }
   .block {
     display: block;
   }
@@ -588,11 +579,6 @@
   .active\:bg-red-900 {
     &:active {
       background-color: var(--color-red-900);
-    }
-  }
-  .sm\:ml-\[10\%\] {
-    @media (width >= 40rem) {
-      margin-left: 10%;
     }
   }
   .sm\:w-100 {
@@ -1266,8 +1252,12 @@
   }
   .container__top {
     margin-right: auto;
+    margin-left: 7%;
     display: flex;
     gap: calc(var(--spacing) * 2);
+  }
+  .container__slogan {
+    width: calc(var(--spacing) * 54);
   }
   .intro-artes img {
     width: calc(var(--spacing) * 15);
