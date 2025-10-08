@@ -75,7 +75,7 @@
 
   .menu {
     @apply 
-     absolute top-[80px] bg-slate-950 w-[80vw] py-4 shadow-xl 
+     absolute top-[80px]  w-[80vw] py-4 shadow-xl 
      left-1/2 -translate-x-1/2 flex flex-col justify-center 
      items-center font-bold text-white opacity-0 invisible
 
