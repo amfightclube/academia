@@ -1148,6 +1148,11 @@
     background-image: url(../img/boxer-destaque.jpg);
     background-size: cover;
     background-position: center;
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
     @media (width >= 64rem) {
       background-image: url(../img/boxer-destaque-pc.jpg);
     }
