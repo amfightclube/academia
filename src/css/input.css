@@ -31,6 +31,15 @@
      box-shadow: rgba(255, 0, 0, 0) 0 0 0 15px;
     }
   }
+
+  @keyframes mais-pop {
+    50% {
+      box-shadow: rgba(255, 204, 0, 0.45) 0 0 0 5px;
+    }  
+    100% {
+      box-shadow: rgba(255, 204, 0, 0) 0 0 0 15px;
+    }
+ }
 }
 
 @layer components {
@@ -46,6 +55,11 @@
     animation: chamada 1.5s infinite ease-in;
     /*alternate -> vai e volta(nao pula pro começo brucamente)*/
   }
+
+  .animate-pop {
+    animation: mais-pop 1s infinite ease-out;
+  }
+
 
   .alinhamento {
     @apply flex flex-col items-center;
@@ -103,20 +117,21 @@
 
   .img-introd {
     @apply 
-      bg-[url(../img/boxer-destaque.jpg)] 
-      lg:bg-[url(../img/boxer-destaque-pc.jpg)] 
+      bg-[url(../img/galeria/boxer-destaque.webp)] 
+      lg:bg-[url(../img/galeria/boxer-destaque-pc.jpg)] 
       lg:bg-top transition-all duration-100
       bg-cover bg-center;
   }
 
   .menu {
     @apply 
-     absolute top-[80px] bg-slate-950 w-[80vw] sm:w-[50vw] py-4 shadow-xl 
-     left-1/2 -translate-x-1/2 flex flex-col justify-center 
-     items-center font-bold text-white opacity-0 invisible
+     absolute top-[80px] bg-slate-950 w-[80vw] sm:w-[50vw] 
+     py-4 shadow-xl left-1/2 -translate-x-1/2 flex flex-col 
+     justify-center items-center font-bold text-white opacity-0 
+     invisible transition-all duration-300
 
      lg:visible lg:opacity-100 lg:w-auto lg:h-full lg:shadow-none 
-     lg:translate-x-0 lg:static lg:bg-black
+     lg:translate-x-0 lg:static lg:bg-black 
     ;
   }
 
@@ -193,7 +208,7 @@
 
   .img-about {
     @apply  
-     h-30 w-full rounded-sm bg-[url(../img/img-jiu-jitsu-destaque.jpg)] 
+     h-30 w-full rounded-sm bg-[url(../img/galeria/about.webp)] 
      bg-top bg-cover 
      
      sm:h-50 md:h-60
@@ -204,11 +219,12 @@
 
   .bg-mestre {
     @apply 
-     h-85 w-70 bg-[url(../img/IMG-mestre-fundo-cinza.png)]
+     h-85 w-70 bg-[url(../img/galeria/about-professor.webp)]
      bg-contain bg-no-repeat  
      
      sm:h-105 sm:w-85
      lg:h-110 lg:w-90
+     xl:h-130 xl:w-110
     ;
   }
 
@@ -216,7 +232,11 @@
     @apply 
     w-full  h-55 sm:h-80 md:h-100  my-5 overflow-x-auto flex gap-4 shadow-2xl 
     lg:h-90 2xl:h-105 relative transition-all duration-300 rounded-sm;
-    scrollbar-width: none
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .galaria-alunos::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
   }
   
   .galaria-alunos img {
@@ -234,7 +254,7 @@
   .dot {
     @apply 
       size-3  rounded-full border-1 border-red-500 
-      cursor-pointer transition-colors block m-1
+      transition-colors block m-1
     ;
    }    
 
@@ -279,7 +299,7 @@
   .mais-pop {
     @apply 
     bg-amber-400 absolute text-black p-1 px-4 rounded-3xl
-    top-[-15px] shadow-xl shadow-amber-300/20
+    top-[-15px] shadow-xl shadow-amber-300/20 
     ;
   }
 

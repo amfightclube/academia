@@ -305,9 +305,6 @@
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
-  .ml-\[2px\] {
-    margin-left: 2px;
-  }
   .block {
     display: block;
   }
@@ -458,6 +455,9 @@
   .to-red-800 {
     --tw-gradient-to: var(--color-red-800);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .object-contain {
+    object-fit: contain;
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
@@ -836,6 +836,12 @@
       font-weight: var(--font-weight-bold);
     }
   }
+  .lg\:shadow-\[0_40px_50px_0_rgba\(0\,0\,0\,1\)\] {
+    @media (width >= 64rem) {
+      --tw-shadow: 0 40px 50px 0 var(--tw-shadow-color, rgba(0,0,0,1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
   .lg\:hover\:bg-yellow-400 {
     @media (width >= 64rem) {
       &:hover {
@@ -855,6 +861,11 @@
           }
         }
       }
+    }
+  }
+  .xl\:mr-\[3\%\] {
+    @media (width >= 80rem) {
+      margin-right: 3%;
     }
   }
   .xl\:h-70 {
@@ -911,6 +922,14 @@
       box-shadow: rgba(255, 0, 0, 0) 0 0 0 15px;
     }
   }
+  @keyframes mais-pop {
+    50% {
+      box-shadow: rgba(255, 204, 0, 0.45) 0 0 0 5px;
+    }
+    100% {
+      box-shadow: rgba(255, 204, 0, 0) 0 0 0 15px;
+    }
+  }
 }
 @layer components {
   .reset-all {
@@ -921,6 +940,9 @@
   }
   .animate-chamada {
     animation: chamada 1.5s infinite ease-in;
+  }
+  .animate-pop {
+    animation: mais-pop 1s infinite ease-out;
   }
   .alinhamento {
     display: flex;
@@ -1145,7 +1167,7 @@
     background-color: var(--color-red-500);
   }
   .img-introd {
-    background-image: url(../img/boxer-destaque.jpg);
+    background-image: url(../img/galeria/boxer-destaque.webp);
     background-size: cover;
     background-position: center;
     transition-property: all;
@@ -1154,7 +1176,7 @@
     --tw-duration: 100ms;
     transition-duration: 100ms;
     @media (width >= 64rem) {
-      background-image: url(../img/boxer-destaque-pc.jpg);
+      background-image: url(../img/galeria/boxer-destaque-pc.jpg);
     }
     @media (width >= 64rem) {
       background-position: top;
@@ -1180,6 +1202,11 @@
     opacity: 0%;
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
     @media (width >= 40rem) {
       width: 50vw;
     }
@@ -1364,7 +1391,7 @@
     height: calc(var(--spacing) * 30);
     width: 100%;
     border-radius: var(--radius-sm);
-    background-image: url(../img/img-jiu-jitsu-destaque.jpg);
+    background-image: url(../img/galeria/about.webp);
     background-size: cover;
     background-position: top;
     @media (width >= 40rem) {
@@ -1392,7 +1419,7 @@
   .bg-mestre {
     height: calc(var(--spacing) * 85);
     width: calc(var(--spacing) * 70);
-    background-image: url(../img/IMG-mestre-fundo-cinza.png);
+    background-image: url(../img/galeria/about-professor.webp);
     background-size: contain;
     background-repeat: no-repeat;
     @media (width >= 40rem) {
@@ -1406,6 +1433,12 @@
     }
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 90);
+    }
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 130);
+    }
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 110);
     }
   }
   .galaria-alunos {
@@ -1438,6 +1471,9 @@
     }
     scrollbar-width: none;
   }
+  .galaria-alunos::-webkit-scrollbar {
+    display: none;
+  }
   .galaria-alunos img {
     height: 100%;
     width: 100%;
@@ -1466,7 +1502,6 @@
     display: block;
     width: calc(var(--spacing) * 3);
     height: calc(var(--spacing) * 3);
-    cursor: pointer;
     border-radius: calc(infinity * 1px);
     border-style: var(--tw-border-style);
     border-width: 1px;

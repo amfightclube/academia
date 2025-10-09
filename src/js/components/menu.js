@@ -16,7 +16,7 @@ bntMenu.addEventListener('click', () => {
 });
 
 //Menu fecha automaticamente ao rolar para baixo.
-const obeserver = new IntersectionObserver((listElemntsObs) => {
+const observer = new IntersectionObserver((listElemntsObs) => {
   listElemntsObs.forEach(elementObs => {
     if (!elementObs.isIntersecting) {
       let elemento = elementObs.target;
@@ -29,4 +29,4 @@ const obeserver = new IntersectionObserver((listElemntsObs) => {
   });
 });
 
-obeserver.observe(menu);
+observer.observe(menu);

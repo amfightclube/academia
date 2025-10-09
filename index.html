@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A.M Fight Clube - Academia de Jiu-Jitsu, Muay Thai e Boxe em Campina Grande. Aula experimental gratuita. Venha treinar conosco!">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="a.m fight clube - Artes Marciais">
+    <meta property="og:description" content="Transformando vidas através das artes marciais. Jiu-Jitsu, Muay Thai e Boxe.">
+    <meta property="og:image" content="https://amfightclube.github.io/academia/src/img/marca.webp">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="icon" href="./src/img/marca.png">
-    <script type="module" src="./src/js/main.js" defer></script>
+    <link rel="icon" href="./src/img/marca.webp">
+    <script type="module" src="./src/js/main.js"></script>
     <title>a.m fight clube</title>
 </head>
 <body class="
@@ -15,45 +21,43 @@
   <header class="
     bg-black flex justify-between items-center h-[60px] 
     w-full relative shadow-[0_10px_50px_0_rgba(0,0,0,1)] 
-    lg:shadow-[0_40px_50px_0_rgba(0,0,0,1)]text-white md:border-b-1
+    lg:shadow-[0_40px_50px_0_rgba(0,0,0,1)] text-white md:border-b-1
   md:border-gray-700 z-50
-  " id="Pos-Inicio"> <!--z-index e quem fica atras e quem fica na frente de quem-->
-    <img src="./src/img/marca.png" alt="" class="
-      h-[90%] object-containn ml-4 mr-11 
+  " id="Pos-Inicio"> <!--z-index é quem fica atrás e quem fica na frente de quem-->
+    <img src="./src/img/marca.webp" alt="Logo A.M Fight Clube" class="
+      h-[90%] object-contain ml-4 mr-11 
     "> 
     <nav class="menu">
       <ul class="
         lg:flex lg:gap-7 lg:h-full w-full lg:w-auto 
       ">
         <li>
-          <button data-posicao="#Pos-sobre">Sobre-nós</button>
+          <button data-posicao="#Pos-sobre" aria-label="Ir para seção sobre nós">Sobre-nós</button>
         </li>
         <span></span>
         <li>
-          <button data-posicao="#Pos-Jiu-jitsu">Jiu-Jitsu</button>
+          <button data-posicao="#Pos-Jiu-jitsu" aria-label="Ir para seção Jiu-Jitsu">Jiu-Jitsu</button>
         </li>
         <span></span>
         <li class="lg:hidden">
-          <button data-posicao="#Pos-muay">Muay Thai</button>
+          <button data-posicao="#Pos-muay" aria-label="Ir para seção Muay Thai">Muay Thai</button>
         </li>
         <span></span>
         <li class="lg:hidden">
-          <button data-posicao="#Pos-box">Boxer</button>
+          <button data-posicao="#Pos-box" aria-label="Ir para seção Boxer">Boxer</button>
         </li>
         <span></span>
         <li>
-          <button data-posicao="#Pos-planos">planos</button>
+          <button data-posicao="#Pos-planos" aria-label="Ir para seção planos">planos</button>
         </li>
         <span></span>
         <li>
-          <button data-posicao="#Pos-contato">contato</button>
+          <button data-posicao="#Pos-contato" aria-label="Ir para seção contato">contato</button>
         </li>
       </ul>
     </nav>
 
-    <button id="bnt-menu" class="
-      h-5 mr-5 reset-all lg:hidden
-    " >
+    <button id="bnt-menu" class="h-5 mr-5 reset-all lg:hidden" aria-label="Abrir menu de navegação">
       <img src="./src/img/icon-hamburger.svg" alt="botao-menu" class="
         bnt-amburg-img
       ">
@@ -66,7 +70,7 @@
       </div>
       <!--img do telefone-->  
       <p>Contate-nos<br>
-        <span class="font-bold">82 994 959495</span>
+        <span class="font-bold">(82) 99151-6883</span>
       </p>
     </div>
   </header>
@@ -85,7 +89,7 @@
         Aproveite os recursos mais fáceis para identificar um valor 
         agregado aproximado rumo ao topo.
       </p>
-      <button class="bnt-inscreva" data-animate data-mensagem> 
+      <button class="bnt-inscreva" data-animate data-mensagem aria-label="Inscrever-se agora na academia"> 
         Inscreva-se agora
       </button>
     </section>
@@ -93,7 +97,7 @@
     <section class="intro-artes">
       <div class="opacity-0 intro__container" data-animate>
         <div class="container__top">
-          <img src="./src/img/vecteezy_jiu-jitsu-red.png" alt="img-jiu-jitsu">
+          <img src="./src/img/vecteezy_jiu-jitsu-red.webp" alt="img-jiu-jitsu">
           <div class="container__slogan">
             <strong id="Pos-Jiu-jitsu">Jiu-Jitsu</strong>
             <p>A arte suave</p>
@@ -114,7 +118,7 @@
 
       <div class="opacity-0 intro__container" data-animate>
         <div class="container__top">
-          <img src="./src/img/vecteezy_muaythai-red.png" alt="img-jiu-jitsu">
+          <img src="./src/img/vecteezy_muaythai-red.webp" alt="img-jiu-jitsu">
           <div class="container__slogan">
             <strong id="Pos-muay">Muay thai</strong>
             <p>Oito pontos de impacto</p>
@@ -138,7 +142,7 @@
 
       <div class="opacity-0 intro__container" data-animate>
         <div class="container__top"> 
-          <img src="./src/img/vecteezy_boxer-red.png" alt="img-jiu-jitsu">
+          <img src="./src/img/vecteezy_boxer-red.webp" alt="img-jiu-jitsu">
           <div class="container__slogan">
             <strong id="Pos-box">Boxe</strong>
             <p>precisão e potência</p>
@@ -180,17 +184,17 @@
       <section class="alinhamento opacity-0 lg:col-start-1 lg:row-start-3 lg:row-end-3" data-animate>  <!--galeria-->
         <h2 class="subtitulo-about">Alunos</h2>
         <div class="galaria-alunos">
-          <img src="./src/img/galeria/img-sessao-apresentacao.jpg" alt="imagem-alunos">
-          <img src="./src/img/galeria/IMG-20250903-WA0056.jpg" alt="imagem-alunos">
-          <img src="./src/img/galeria/IMG-20250903-WA0057.jpg" alt="imagem-alunos">
+          <img src="./src/img/galeria/img-sessao-apresentacao.webp" alt="imagem-alunos" loading="lazy">
+          <img src="./src/img/galeria/IMG-20250903-WA0056.webp" alt="imagem-alunos" loading="lazy">
+          <img src="./src/img/galeria/IMG-20250903-WA0057.webp" alt="imagem-alunos" loading="lazy">
         </div>
 
         <div class="container-bnt-gl">
-          <button data-ide="ant">
+          <button data-ide="ant" aria-label="Imagem anterior">
             <img src="./src/img/arrow.svg" alt="seta-left">
           </button>
           <button data-ide="prox">
-            <img src="./src/img/arrow (1).svg" alt="seta-right">
+            <img src="./src/img/arrow (1).svg" alt="seta-right" aria-label="Próxima imagem">
           </button>
         </div>
 
@@ -205,16 +209,16 @@
        w-full alinhamento col-start-2 row-start-2 row-end-4
        lg:self-start my-5
       ">
-        <h2 class="my-5 ml-[2px] font-bold text-xl text-center text-red-500 lg:mt-0" data-animate>Professor</h2>
+        <h2 class="my-5 xl:mr-[3%] font-bold text-xl text-center text-red-500 lg:mt-0" data-animate>Professor</h2>
         <div class="bg-mestre opacity-0" data-animate></div>
-        <a href="https://www.instagram.com/am.fightclub/" >
-          <img src="./src/img/icon-instagram.svg" alt="icone-instagram" class="
-            size-7 mt-5
-          ">
+        <a href="https://www.instagram.com/am.fightclub/" aria-label="Visite nosso Instagram">
+          <img src="./src/img/icon-instagram.svg" alt="icone-instagram" class="size-7 mt-5">
         </a>
       </section>
   
-    <section class="planos alinhamento lg:w-full row-start-4 col-span-full lg:mt-10" id="Pos-planos">
+    <section class="
+    planos alinhamento lg:w-full row-start-4 col-span-full lg:mt-10" 
+    id="Pos-planos">
       <button class="
        bg-red-600 text-white h-12 w-42 shadow-lg shadow-red-500/50
        lg:hover:bg-yellow-400 rounded-sm lg:hover:shadow-yellow-500/50
@@ -224,9 +228,9 @@
       </button>
 
       <p class="mt-2 text-blue-950 ">Aula experimental</p>
-      <p class="font-bold text-green-500 mb-4">Gratís</p>
+      <p class="font-bold text-green-500 mb-4">Grátis</p>
 
-      <h2 class="text-xl font-bold text-blue-950">Planos Mesais</h2>
+      <h2 class="text-xl font-bold text-blue-950">Planos Mensais</h2>
       <p class="
        font-semibold text-gray-500 w-70 text-center mb-5
       ">Escolha o plano ideal para seus objetivos</p>
@@ -236,10 +240,10 @@
        xl:w-[75%] 2xl:w-[70%] lg:justify-evenly lg:flex-row lg:flex-nowrap
        ">
         <div class="alinhamento border-1 border-yellow-400 relative card opacity-0"  data-animate> 
-        <span class="mais-pop">
+        <span class="mais-pop animate-pop">
           Mais popular
         </span>
-        <img src="./src/img/vecteezy_jiu-jitsu.png" alt="">
+        <img src="./src/img/vecteezy_jiu-jitsu.png" alt="Ícone Jiu-Jitsu">
         <strong>Jiu-Jitsu</strong>
         <p>2x por semana</p>
         <p>
@@ -251,10 +255,10 @@
 
         <ul>
           <li class="icon-corr">
-            <img src="./src/img/corrijido.png" alt="icone">Treinos terça e quinta
+            <img src="./src/img/icon-corrijido.webp" alt="icone">Treinos terça e quinta
           </li>
           <li class="icon-corr">
-            <img src="./src/img/corrijido.png" alt="icone">
+            <img src="./src/img/icon-corrijido.webp" alt="icone">
             Aulas em grupo
           </li>
         </ul>
@@ -266,7 +270,7 @@
       </div>
 
       <div class="alinhamento border-gray-500 card opacity-0" data-animate> 
-        <img src="./src/img/vecteezy_muaythai.png" alt="">
+        <img src="./src/img/vecteezy_muaythai.png" alt="Ícone Muay Thai">
         <strong>Muay thai</strong>
         <p>2x por semana</p>
         <p>
@@ -278,10 +282,10 @@
 
         <ul>
           <li class="icon-corr">
-            <img src="./src/img/corrijido.png" alt="icone">Treinos Quarta e sex
+            <img src="./src/img/icon-corrijido.webp" alt="icone">Treinos Quarta e sex
           </li>
           <li class="icon-corr">
-            <img src="./src/img/corrijido.png" alt="icone">
+            <img src="./src/img/icon-corrijido.webp" alt="icone">
             Aulas em grupo
           </li>
         </ul>
@@ -293,7 +297,7 @@
       </div>
 
       <div class="alinhamento  border-amber-700 card opacity-0" data-animate> 
-        <img src="./src/img/vecteezy_boxer.png" alt="">
+        <img src="./src/img/vecteezy_boxer.png" alt="Ícone Boxe">
         <strong>Boxer</strong>
         <p>1x por semana</p>
         <p>
@@ -305,10 +309,10 @@
 
         <ul>
           <li class="icon-corr">
-            <img src="./src/img/corrijido.png" alt="icone">Segunda feira
+            <img src="./src/img/icon-corrijido.webp" alt="icone">Segunda feira
           </li>
           <li class="icon-corr">
-            <img src="./src/img/corrijido.png" alt="icone">
+            <img src="./src/img/icon-corrijido.webp" alt="icone">
             Aulas em grupo
           </li>
         </ul>
@@ -367,7 +371,7 @@
             <div class="alinhamento justify-center">
               <img src="./src/img/icon-localizacao.svg" alt="icone-telefone">
             </div>
-            <strong>Localizaçao</strong>
+            <strong>Localização</strong>
             <p>Av.Arlinda Tenório Veras</p>
           </li>
         </ul>
@@ -397,7 +401,7 @@
   ">
     <div class="flex gap-2 my-4 self-center items-center md:col-span-full">
       <a 
-        href="#"><img src="./src/img/marca.png" alt="logo" class="
+        href="#"><img src="./src/img/marca.webp" alt="Logo A.M Fight Clube" class="
         size-12">
       </a>
       <p 
@@ -466,7 +470,7 @@
     </div>
 
     <div class="md:col-start-3 row-start-2">
-      <h2 class="footer-subtitulo">Redes Socias</h2>
+      <h2 class="footer-subtitulo">Redes Sociais</h2>
       <ul class="list-social pl-1">
         <li>
           <a href="https://www.instagram.com/am.fightclub/">
