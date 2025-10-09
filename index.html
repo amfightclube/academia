@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="icon" href="./src/img/marca.png">
     <script type="module" src="./src/js/main.js" defer></script>
     <title>a.m fight clube</title>
 </head>
@@ -12,8 +13,8 @@
   alinhamento bg-black
 ">
   <header class="
-    bg-black flex justify-between items-center 
-    h-[60px] w-full relative shadow-[0_10px_50px_0_rgba(0,0,0,1)] 
+    bg-black flex justify-between items-center h-[60px] 
+    w-full relative shadow-[0_10px_50px_0_rgba(0,0,0,1)] 
     lg:shadow-[0_40px_50px_0_rgba(0,0,0,1)]text-white md:border-b-1
   md:border-gray-700 z-50
   " id="Pos-Inicio"> <!--z-index e quem fica atras e quem fica na frente de quem-->
@@ -58,8 +59,12 @@
       ">
     </button>
 
-    <div class="hidden mr-4 lg:flex lg:items-center"><!--pc-->
-      <img src="" alt=""> <!--img do telefone-->  
+    <div class="hidden mr-5 lg:flex lg:items-center lg:gap-x-4"><!--pc-->
+      <div class="tefone-header animate-chamada">
+        <img src="./src/img/telefone-chma.svg" alt="icone-telefone" class="
+        size-4"> 
+      </div>
+      <!--img do telefone-->  
       <p>Contate-nos<br>
         <span class="font-bold">82 994 959495</span>
       </p>
@@ -80,7 +85,6 @@
         Aproveite os recursos mais fáceis para identificar um valor 
         agregado aproximado rumo ao topo.
       </p>
-
       <button class="bnt-inscreva" data-animate data-mensagem> 
         Inscreva-se agora
       </button>
@@ -172,9 +176,8 @@
           A filosofia da AM Fight Clube é unir esporte, disciplina e companheirismo, formando atletas e cidadãos melhores dentro e fora do tatame/ringue.
         </p>
       </section>
-      
 
-      <section class="alinhamento lg:col-start-1 lg:row-start-3 lg:row-end-3" data-animate>  <!--galeria-->
+      <section class="alinhamento opacity-0 lg:col-start-1 lg:row-start-3 lg:row-end-3" data-animate>  <!--galeria-->
         <h2 class="subtitulo-about">Alunos</h2>
         <div class="galaria-alunos">
           <img src="./src/img/galeria/img-sessao-apresentacao.jpg" alt="imagem-alunos">
@@ -315,8 +318,6 @@
           começar agora
         </button>
       </div>
-      </div>
-      
     </section>
   </main>
 
@@ -454,9 +455,7 @@
       </ul>
     </div>
 
-    <div class="
-      md:col-start-1 md:col-end-2 md:row-start-2
-    ">
+    <div class="md:col-start-1 md:col-end-2 md:row-start-2">
       <h2 class="text-white font-bold pl-1 my-3">Hórarios</h2>
       <ul class="pl-1">
         <li class="mb-2"><span>Todas modalidades</span><br>Seg - Sex: 19:30h as 21:00h</li>
@@ -465,11 +464,8 @@
         <li>Boxer: Seg</li>
       </ul>
     </div>
-   
 
-    <div class="
-      md:col-start-3 row-start-2
-    ">
+    <div class="md:col-start-3 row-start-2">
       <h2 class="footer-subtitulo">Redes Socias</h2>
       <ul class="list-social pl-1">
         <li>
@@ -480,15 +476,12 @@
       </ul>
     </div>
     
-    <div class="
-      md:col-span-full w-full
-    ">
+    <div class="md:col-span-full w-full">
       <span class="linha self-center w-full my-4 bg-gray-700"></span>
       <p class="text-center">
        © 2025 <strong class="text-yellow-500 self-center">a.m fight clube</strong>. Todos os direitos reservados.
       </p>
     </div>
-   
   </footer>
   <!-- Por:jose33-afk -->
 </body>
