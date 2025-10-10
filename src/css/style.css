@@ -68,6 +68,7 @@
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
@@ -313,17 +314,11 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
-  .mt-7 {
-    margin-top: calc(var(--spacing) * 7);
-  }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
   }
   .mr-11 {
     margin-right: calc(var(--spacing) * 11);
-  }
-  .mr-auto {
-    margin-right: auto;
   }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
@@ -363,6 +358,12 @@
   }
   .hidden {
     display: none;
+  }
+  .inline {
+    display: inline;
+  }
+  .inline-block {
+    display: inline-block;
   }
   .inline-flex {
     display: inline-flex;
@@ -870,6 +871,14 @@
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-100 {
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
   }
   .duration-300 {
     --tw-duration: 300ms;
@@ -2115,29 +2124,33 @@
   .footer-list {
     padding-left: calc(var(--spacing) * 1);
   }
-  .footer-list li {
+  .bnt-links {
     display: flex;
     align-items: center;
-    @media (width >= 64rem) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-yellow-500);
-        }
+    gap: calc(var(--spacing) * 1);
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+    --tw-ease: var(--ease-in);
+    transition-timing-function: var(--ease-in);
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-yellow-500);
       }
     }
-  }
-  .footer-list label, button {
-    cursor: pointer;
-  }
-  .footer-list button {
     &:active {
       color: var(--color-yellow-500);
     }
   }
-  .footer-list svg {
-    margin-bottom: 2px;
-    width: calc(var(--spacing) * 3);
-    height: calc(var(--spacing) * 3);
+  .bnt-links svg {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-translate-x: calc(var(--spacing) * 1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
   }
   .list-social li {
     display: flex;
