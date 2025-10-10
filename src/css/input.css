@@ -304,7 +304,7 @@
   }
 
   .linha {
-    @apply h-px w-[80%] block bg-gray-400 my-2;
+    @apply h-px w-[80%] block bg-gray-400/50 my-2;
   }
 
   .planos ul {
@@ -344,7 +344,22 @@
     @apply col-start-2 lg:text-lg;
   }
 
+  /*Horarios*/
+  .hora-sty {
+    @apply border-l-3 border-yellow-500/40 pl-4 ;
+  }
+
+  .hora-sty span{
+    @apply text-white ;
+  }
+
   /*footer*/
+  .linha-footer {
+    @apply 
+      h-px w-full bg-gradient-to-r from-gray-400  to-transparent my-2 
+    ;
+  }
+
   .footer-subtitulo {
     @apply  text-white font-bold pl-1 my-3;
   }
@@ -357,6 +372,10 @@
     @apply flex items-center lg:hover:text-yellow-500;
   }
 
+  .footer-list label, button {
+    @apply cursor-pointer;
+  }
+
   .footer-list button {
     @apply active:text-yellow-500;
   }
@@ -367,12 +386,12 @@
 
   .list-social li {
     @apply 
-     size-8 bg-gray-500 rounded-md flex justify-center 
-     items-center hover:bg-red-500; 
-  }
-
-  .list-social svg {
-    @apply text-white;
+     h-8 w-full bg-gray-500 rounded-md flex justify-center 
+     items-center hover:bg-gradient-to-r
+     hover:from-purple-700 hover:to-pink-700
+     md:w-[70%] font-bold text-white  duration-300 
+     hover:scale-105 transition-all
+    ; 
   }
 }
 /* Por:jose33-afk */
