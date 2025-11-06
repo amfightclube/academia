@@ -3,7 +3,7 @@ import { passarImg } from "../galeria-alunos.js";
 
 const container = pegaElemento('.galaria-alunos'); 
 const dots = pegaElemento('.dot', 2);
-const img = pegaElemento('.galaria-alunos > img');
+const img = pegaElemento('.galaria-alunos > img');//largura da img inicialmente.
 let largImg;
 let timer;
 
@@ -36,3 +36,5 @@ container.addEventListener('scroll', () => {
 /*
   1 - o quanto a div rolou pro lado ja que ela tem scroll x
 */
+
+
