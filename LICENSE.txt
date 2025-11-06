@@ -1,5 +1,5 @@
-android-site-2.0
-Copyright (c) 2025 jose33-afk
+amfightclube
+Copyright (c) 2025 amfightclube
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 
